@@ -127,6 +127,7 @@ export default function Nav() {
             }}
           >
             <DropdownItem
+              href="#experience"
               key="experience"
               startContent={
                 <SuitcaseSimple className="text-amber-700" size={24} />
@@ -134,6 +135,7 @@ export default function Nav() {
             >
               Experience
             </DropdownItem>
+
             <DropdownItem
               key="testimonials"
               startContent={<User className="text-lime-700" size={24} />}

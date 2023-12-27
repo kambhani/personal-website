@@ -1,4 +1,4 @@
-import { Image } from "@nextui-org/react";
+import { useRef } from "react";
 
 export default function Education() {
   const filenames = [
@@ -13,11 +13,15 @@ export default function Education() {
     "2023-09-19",
     "2023-12-03",
   ];
+  const widths = useRef<number[]>([]);
+  for (let i = 0; i < filenames.length; i++) {
+    widths.current = [...widths.current, Math.random() * 200 + 300];
+  }
 
   return (
-    <div>
+    <div className="bg-blue-100 pb-32 dark:bg-blue-950">
       <h2
-        className="ml-4 text-2xl font-light sm:ml-6 sm:text-3xl"
+        className="mb-4 ml-4 pt-24 text-2xl font-light sm:ml-6 sm:text-3xl"
         id="education"
       >
         My Education Journey
@@ -28,7 +32,7 @@ export default function Education() {
             {index < 5 && (
               <img
                 key={filename}
-                width={Math.random() * 200 + 300}
+                width={widths.current[index]}
                 className="h-[500px] min-w-48 flex-[1_0_auto] rounded-2xl object-cover p-2"
                 src={`/purdue/${filename}.jpeg`}
                 alt="asdf"
@@ -45,7 +49,7 @@ export default function Education() {
             {index >= 5 && (
               <img
                 key={filename}
-                width={Math.random() * 200 + 300}
+                width={widths.current[index]}
                 className="h-[500px] min-w-48 flex-[1_0_auto] rounded-2xl object-cover p-2"
                 src={`/purdue/${filename}.jpeg`}
                 alt="asdf"

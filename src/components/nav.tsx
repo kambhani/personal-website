@@ -95,7 +95,11 @@ export default function Nav() {
 
       <NavbarContent className="hidden gap-4 md:flex" justify="center">
         <NavbarItem>
-          <Link className="inline-flex align-top" color="foreground" href="#">
+          <Link
+            className="inline-flex align-top"
+            color="foreground"
+            href="#education"
+          >
             <GraduationCap className="mr-1 text-fuchsia-700" size={20} />
             Education
           </Link>
@@ -181,7 +185,7 @@ export default function Nav() {
             <Link
               color="foreground"
               className="inline-flex w-full align-top"
-              href="#"
+              href={`#${item.name.toLocaleLowerCase()}`}
               size="lg"
             >
               {item.icon}

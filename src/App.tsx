@@ -1,6 +1,7 @@
 import useDarkMode from "use-dark-mode";
 import Nav from "./components/nav";
 import Hero from "./components/hero";
+import Education from "./components/education";
 
 function App() {
   useDarkMode(false, {
@@ -12,6 +13,7 @@ function App() {
     <main>
       <Nav />
       <Hero />
+      <Education />
     </main>
   );
 }

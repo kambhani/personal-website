@@ -29,7 +29,10 @@ export default function Experience() {
   ];
 
   return (
-    <div className="bg-radient-ellipse-c min-h-screen from-emerald-300 to-slate-300 dark:from-emerald-700 dark:to-slate-700">
+    <div
+      data-scroll-section
+      className="bg-radient-ellipse-c min-h-screen from-emerald-300 to-slate-300 dark:from-emerald-700 dark:to-slate-700"
+    >
       <h2
         className="mx-auto mb-8 w-4/5 pt-24 text-2xl font-light sm:w-2/3 sm:text-3xl"
         id="experience"
@@ -49,9 +52,7 @@ export default function Experience() {
               />
               <Divider className="mx-4 h-full" orientation="vertical" />
               <div className="pb-b font-light">
-                <h3 className="text-xl font-semibold text-danger">
-                  {company.name}
-                </h3>
+                <h3 className="text-xl font-semibold">{company.name}</h3>
                 <h4 className="text-lg font-light">{company.position}</h4>
                 <h4 className="text-lg font-light">{company.time}</h4>
               </div>

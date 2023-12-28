@@ -1,15 +1,11 @@
 import { Image } from "@nextui-org/react";
+import { Parallax } from "react-scroll-parallax";
 
 export default function Hero() {
   return (
-    <>
-      <div
-        data-scroll-section
-        className="min-h-screen"
-        data-scroll
-        data-scroll-speed="4"
-      >
-        <div className="mx-auto mb-6 mt-20 flex w-2/3 max-w-[1400px] justify-center">
+    <Parallax speed={-50}>
+      <div className="min-h-screen">
+        <div className="mx-auto mb-6 mt-80 flex w-2/3 max-w-[1400px] justify-center">
           <Image
             isBlurred
             isZoomed
@@ -25,6 +21,6 @@ export default function Hero() {
           share my journey, passions, and discoveries with the world.
         </h1>
       </div>
-    </>
+    </Parallax>
   );
 }

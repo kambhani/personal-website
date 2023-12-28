@@ -29,11 +29,9 @@ import {
   Moon,
 } from "@phosphor-icons/react";
 import useDarkMode from "use-dark-mode";
-import { useLocomotiveScroll } from "react-locomotive-scroll";
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const { scroll } = useLocomotiveScroll();
   const darkMode = useDarkMode(false, {
     classNameLight: "light",
     classNameDark: "dark",
@@ -75,7 +73,7 @@ export default function Nav() {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} data-scroll-section>
+    <Navbar onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -97,18 +95,14 @@ export default function Nav() {
 
       <NavbarContent className="hidden gap-4 md:flex" justify="center">
         <NavbarItem>
-          <Button
-            disableRipple
-            className="bg-transparent p-0 text-base data-[hover=true]:bg-transparent"
-            radius="sm"
-            variant="light"
-            onClick={() =>
-              scroll.scrollTo(document.getElementById("education"))
-            }
+          <Link
+            className="inline-flex align-top"
+            color="foreground"
+            href="#education"
           >
-            <GraduationCap className="mr-1 text-fuchsia-700" size={20} />
+            <GraduationCap className="mr-1 text-fuchsia-500" size={20} />
             Education
-          </Button>
+          </Link>
         </NavbarItem>
         <Dropdown>
           <NavbarItem>
@@ -133,10 +127,8 @@ export default function Nav() {
             }}
           >
             <DropdownItem
-              onClick={() =>
-                scroll.scrollTo(document.getElementById("experience"))
-              }
               key="experience"
+              href="#experience"
               startContent={
                 <SuitcaseSimple className="text-amber-700" size={24} />
               }

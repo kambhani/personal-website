@@ -30,7 +30,13 @@ export default function Experience() {
   ];
 
   return (
-    <div className="bg-radient-ellipse-c min-h-screen from-emerald-300 to-slate-300 dark:from-emerald-700 dark:to-slate-700">
+    <Parallax
+      speed={-10}
+      className="min-h-screen from-emerald-300 to-slate-300 bg-radient-ellipse-c dark:from-emerald-700 dark:to-slate-700"
+      style={{
+        mask: "conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/30.00px 100%",
+      }}
+    >
       <div className="mb-96">
         <div
           className="flex h-32 w-full flex-col items-center justify-start pt-24 font-semibold sm:h-64"
@@ -86,7 +92,7 @@ export default function Experience() {
           </Parallax>
         ))}
       </div>
-      <div className="h-screen"></div>
-    </div>
+      <div className="h-40"></div>
+    </Parallax>
   );
 }

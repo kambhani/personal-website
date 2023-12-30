@@ -1,4 +1,5 @@
 const plugin = require("tailwindcss/plugin");
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 const radialGradientPlugin = plugin(
   function ({ matchUtilities, theme }) {
@@ -54,6 +55,11 @@ export default {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      xs: "520px",
+      ...defaultTheme.screens,
+      "3xl": "1800px",
+    },
     extend: {},
   },
   darkMode: "class",

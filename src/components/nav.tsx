@@ -17,7 +17,6 @@ import {
 import {
   GraduationCap,
   CaretDown,
-  User,
   Certificate,
   SuitcaseSimple,
   Laptop,
@@ -49,10 +48,6 @@ export default function Nav() {
     {
       name: "Experience",
       icon: <SuitcaseSimple className="mr-2 text-amber-700" size={20} />,
-    },
-    {
-      name: "Testimonials",
-      icon: <User className="mr-2 text-lime-700" size={20} />,
     },
     {
       name: "Certifications",
@@ -135,15 +130,9 @@ export default function Nav() {
             >
               Experience
             </DropdownItem>
-
-            <DropdownItem
-              key="testimonials"
-              startContent={<User className="text-lime-700" size={24} />}
-            >
-              Testimonials
-            </DropdownItem>
             <DropdownItem
               key="certifications"
+              href="#certifications"
               startContent={<Certificate className="text-sky-600" size={24} />}
             >
               Certifications
@@ -151,7 +140,11 @@ export default function Nav() {
           </DropdownMenu>
         </Dropdown>
         <NavbarItem>
-          <Link className="inline-flex align-top" color="foreground" href="#">
+          <Link
+            className="inline-flex align-top"
+            color="foreground"
+            href="#projects"
+          >
             <Laptop className="mr-1 text-violet-500" size={20} />
             Projects
           </Link>

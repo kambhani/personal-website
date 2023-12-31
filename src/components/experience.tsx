@@ -1,11 +1,11 @@
 import { Image, Divider } from "@nextui-org/react";
-import { Parallax, useParallax } from "react-scroll-parallax";
+import { Parallax } from "react-scroll-parallax";
 
 export default function Experience() {
   const comapny_info = [
     {
       name: "District 4 Labs",
-      logo: "district_4_labs.png",
+      logo: "district_4_labs.jpeg",
       time: "December 2023 — Present",
       position: "Software Engineer Intern",
       description:
@@ -30,11 +30,10 @@ export default function Experience() {
   ];
 
   return (
-    <Parallax
-      speed={-10}
-      className="min-h-screen from-emerald-300 to-slate-300 bg-radient-ellipse-c dark:from-emerald-700 dark:to-slate-700"
+    <div
+      className="min-h-screen from-slate-200 to-slate-600 bg-radient-ellipse-c dark:from-slate-950 dark:to-slate-600"
       style={{
-        mask: "conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/30.00px 100%",
+        mask: "conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/3rem 100%",
       }}
     >
       <div className="mb-96">
@@ -63,27 +62,29 @@ export default function Experience() {
         </div>
       </div>
       <div className="mx-auto flex w-11/12 flex-col gap-8 sm:w-2/3">
-        {comapny_info.map((company, index) => (
+        {comapny_info.map((company) => (
           <Parallax key={company.name} scale={[1, 1.3]}>
             <div
-              className="mb-16 rounded-xl border border-foreground bg-emerald-200 p-8 shadow-xl dark:bg-emerald-800"
+              className="mb-16 rounded-xl border border-foreground bg-slate-200 p-8 shadow-xl dark:bg-slate-700"
               key={company.name}
             >
               <div className="flex h-36 w-full items-center px-4">
                 <Image
                   isZoomed
-                  className="pb-2"
+                  className=""
                   src={`/company_logos/${company.logo}`}
                   alt={`Logo for ${company.name}`}
                   width={80}
                 />
                 <Divider className="mx-4 h-full" orientation="vertical" />
                 <div className="pb-b font-light">
-                  <h3 className="text-lg font-semibold sm:text-xl">
-                    {company.name}
-                  </h3>
-                  <h4 className="font-light sm:text-lg">{company.position}</h4>
-                  <h4 className="font-light sm:text-lg">{company.time}</h4>
+                  <h3 className="font-semibold sm:text-xl">{company.name}</h3>
+                  <h4 className="text-sm font-light sm:text-lg">
+                    {company.position}
+                  </h4>
+                  <h4 className="text-sm font-light sm:text-lg">
+                    {company.time}
+                  </h4>
                 </div>
               </div>
               <Divider className="mb-2" />
@@ -93,6 +94,6 @@ export default function Experience() {
         ))}
       </div>
       <div className="h-40"></div>
-    </Parallax>
+    </div>
   );
 }

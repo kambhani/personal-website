@@ -4,6 +4,7 @@ import Hero from "./components/hero";
 import Education from "./components/education";
 import Experience from "./components/experience";
 import Credentials from "./components/credentials";
+import Projects from "./components/projects";
 
 function App() {
   useDarkMode(false, {
@@ -18,6 +19,7 @@ function App() {
       <Education />
       <Experience />
       <Credentials />
+      <Projects />
     </main>
   );
 }

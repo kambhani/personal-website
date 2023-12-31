@@ -60,7 +60,18 @@ export default {
       ...defaultTheme.screens,
       "3xl": "1800px",
     },
-    extend: {},
+    extend: {
+      animation: {
+        text: "textclip 3s linear infinite",
+      },
+      keyframes: {
+        textclip: {
+          to: {
+            backgroundPosition: "200% center",
+          },
+        },
+      },
+    },
   },
   darkMode: "class",
   plugins: [

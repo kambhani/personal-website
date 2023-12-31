@@ -38,7 +38,7 @@ export default function Hero() {
           />
         )}
         <div className="min-h-screen">
-          <div className="mx-auto mb-6 flex w-2/3 max-w-[1400px] justify-center pt-40">
+          <div className="mx-auto mb-6 flex w-2/3 max-w-[1400px] justify-center pt-24 md:pt-40">
             <Image
               isBlurred
               isZoomed

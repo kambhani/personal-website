@@ -1,74 +1,98 @@
-import { useRef } from "react";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  Divider,
-  CardFooter,
-  Image,
-} from "@nextui-org/react";
+import { useState } from "react";
+import { Card, CardHeader, CardBody, Divider } from "@nextui-org/react";
 import { MathOperations } from "@phosphor-icons/react";
 import { Parallax } from "react-scroll-parallax";
-import { Masonry } from "masonic";
+import PhotoAlbum from "react-photo-album";
+import Lightbox from "yet-another-react-lightbox";
+import Download from "yet-another-react-lightbox/plugins/download";
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 export default function Education() {
-  const images = [
+  const [index, setIndex] = useState(-1);
+
+  const data = [
     {
       filename: "2022-08-15.jpeg",
+      width: 768,
+      height: 1024,
       altText: "Me standing in front of the Purdue arch.",
       footer: "My first day",
     },
     {
       filename: "2022-11-19.jpeg",
+      width: 640,
+      height: 796,
       altText:
         "Me with some friends watching the football game against Northwestern.",
       footer: "A chilly football game against Northwestern",
     },
     {
       filename: "2023-02-05.jpeg",
+      width: 4032,
+      height: 3024,
       altText: "Me holding a golden ticket.",
       footer: "Golden ticket secured 💪",
     },
     {
       filename: "2023-03-04.jpeg",
+      width: 2048,
+      height: 1536,
       altText:
         "The Purdue Philharmonic orchestra, performing at Long Center in Lafayette, Indiana.",
       footer: "The Purdue Philharmonic orchestra",
     },
     {
       filename: "2023-03-05.jpeg",
+      width: 768,
+      height: 1024,
       altText:
         "A selfie of me. In the background there is a bike in a tree, a common Purdue tradition.",
       footer: "A timeless Purdue tradition (wasn't me though)",
     },
     {
       filename: "2023-08-15.jpeg",
+      width: 768,
+      height: 1024,
       altText:
         "A group photo of me and my fellow BGR leaders in front of a tree.",
       footer: "BGR team leader group (they were awesome)",
     },
     {
       filename: "2023-08-18.jpeg",
+      width: 1024,
+      height: 768,
       altText: "A photo of me and my BGR group after our fountain run.",
       footer: "My BGR group after a long fountain run",
     },
     {
       filename: "2023-09-16.jpeg",
+      width: 1024,
+      height: 768,
       altText:
         "A photo of me and my friends at Ross-Ade Stadium before a football game.",
       footer: "Good seats at Ross-Ade",
     },
     {
       filename: "2023-09-19.jpeg",
+      width: 1024,
+      height: 769,
       altText:
         "A photo of some high-rise buildings in downtown West Lafayette.",
       footer: "The West Lafayette skyline",
     },
   ];
-  const widths = useRef<number[]>([]);
-  for (let i = 0; i < images.length; i++) {
-    widths.current = [...widths.current, Math.random() * 150 + 100];
-  }
+  const images = data.map((photo) => ({
+    src: `/purdue/${photo.filename}`,
+    width: photo.width,
+    height: photo.height,
+    alt: photo.altText,
+  }));
+
   const courses = [
     {
       name: "Honors Multivariate Calculus",
@@ -186,36 +210,24 @@ export default function Education() {
           friends you make and places you go.
         </h3>
         <div className="mx-auto flex w-full flex-wrap px-2 sm:px-4">
-          <Masonry items={images} render={MasonryCard} columnWidth={270} />
+          {/*<Masonry items={images} render={MasonryCard} columnWidth={270} />*/}
+        </div>
+        <div className="mx-auto w-11/12">
+          <PhotoAlbum
+            layout="columns"
+            photos={images}
+            targetRowHeight={150}
+            onClick={({ index: current }) => setIndex(current)}
+          />
+          <Lightbox
+            slides={images}
+            open={index >= 0}
+            index={index}
+            close={() => setIndex(-1)}
+            plugins={[Download, Fullscreen, Slideshow, Thumbnails, Zoom]}
+          />
         </div>
       </section>
     </Parallax>
   );
 }
-
-const MasonryCard = ({
-  data: { filename, altText, footer },
-  width,
-}: {
-  index: number;
-  data: { filename: string; altText: string; footer: string };
-  width: number;
-}) => {
-  return (
-    <Parallax className="m-2" rotateY={[15, -15]}>
-      <Card isFooterBlurred radius="lg" className="h-full w-full border-none">
-        <Image
-          alt={altText}
-          className="m-0 h-full w-full object-cover p-0"
-          src={`/purdue/${filename}`}
-          width={width}
-        />
-        <CardFooter className="absolute bottom-1 z-10 ml-1 w-[calc(100%_-_8px)] justify-center overflow-hidden rounded-large border-1 border-white/20 py-1 shadow-small before:rounded-xl before:bg-white/10">
-          <p className="text-center text-xs font-semibold text-white/80">
-            {footer}
-          </p>
-        </CardFooter>
-      </Card>
-    </Parallax>
-  );
-};

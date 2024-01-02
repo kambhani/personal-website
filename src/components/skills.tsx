@@ -102,7 +102,10 @@ export default function Skills() {
   return (
     <Parallax speed={0} easing={"easeOutQuad"}>
       <div className="min-h-screen bg-lime-400 dark:bg-lime-600">
-        <h2 className="mx-auto w-3/5 pt-8 text-center text-5xl sm:text-[5rem] md:text-[6rem] lg:text-[7rem] xl:text-[9rem]">
+        <h2
+          id="skills"
+          className="mx-auto w-3/5 pt-8 text-center text-5xl text-slate-900 sm:text-[5rem] md:text-[6rem] lg:text-[7rem] xl:text-[9rem]"
+        >
           MY SKILLS
         </h2>
         <div className="mx-auto mt-20 flex w-11/12 flex-row flex-wrap gap-4">
@@ -111,7 +114,6 @@ export default function Skills() {
               data={data}
               identity="name"
               value="level"
-              nodeOpacity={darkMode.value ? 0.5 : 0.33}
               parentLabelTextColor={darkMode.value ? "white" : "black"}
               label="id"
               parentLabelSize={48}

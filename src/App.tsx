@@ -6,6 +6,8 @@ import Experience from "./components/experience";
 import Credentials from "./components/credentials";
 import Projects from "./components/projects";
 import Skills from "./components/skills";
+import Hobbies from "./components/hobbies";
+import Footer from "./components/footer";
 
 function App() {
   useDarkMode(false, {
@@ -22,6 +24,8 @@ function App() {
       <Credentials />
       <Projects />
       <Skills />
+      <Hobbies />
+      <Footer />
     </main>
   );
 }

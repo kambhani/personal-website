@@ -24,7 +24,7 @@ export default function Hero() {
     });
   }, []);
   return (
-    <div className="bg-background">
+    <div id="home" className="bg-background">
       <Parallax speed={-50}>
         {init && darkMode.value ? (
           <Particles

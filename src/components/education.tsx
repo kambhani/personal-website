@@ -216,7 +216,6 @@ export default function Education() {
           <PhotoAlbum
             layout="columns"
             photos={images}
-            targetRowHeight={150}
             onClick={({ index: current }) => setIndex(current)}
           />
           <Lightbox

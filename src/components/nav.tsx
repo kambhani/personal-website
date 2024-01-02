@@ -58,7 +58,7 @@ export default function Nav() {
       icon: <Laptop className="mr-2 text-violet-500" size={20} />,
     },
     {
-      name: "Competencies",
+      name: "Skills",
       icon: <ListChecks className="mr-2 text-emerald-500" size={20} />,
     },
     {
@@ -75,16 +75,20 @@ export default function Nav() {
           className="md:hidden"
         />
         <NavbarBrand>
-          <p className="hidden w-full p-2 text-center font-mono text-2xl font-bold tracking-widest text-inherit md:flex md:w-min">
-            {"{AK}"}
-          </p>
+          <Link href="#home">
+            <p className="hidden w-full p-2 text-center font-mono text-2xl font-bold tracking-widest text-foreground md:flex md:w-min">
+              {"{AK}"}
+            </p>
+          </Link>
         </NavbarBrand>
       </NavbarContent>
       <NavbarContent className="md:hidden">
-        <NavbarBrand>
-          <p className="w-full p-2 text-center font-mono text-2xl font-bold tracking-widest text-inherit md:w-min">
-            {"{AK}"}
-          </p>
+        <NavbarBrand className="justify-center">
+          <Link className="text-right" href="#home">
+            <span className="w-full p-2 text-center font-mono text-2xl font-bold tracking-widest text-foreground md:w-min">
+              {"{AK}"}
+            </span>
+          </Link>
         </NavbarBrand>
       </NavbarContent>
 
@@ -150,13 +154,21 @@ export default function Nav() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="inline-flex align-top" color="foreground" href="#">
+          <Link
+            className="inline-flex align-top"
+            color="foreground"
+            href="#skills"
+          >
             <ListChecks className="mr-1 text-emerald-500" size={20} />
             Skills
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="inline-flex align-top" color="foreground" href="#">
+          <Link
+            className="inline-flex align-top"
+            color="foreground"
+            href="#hobbies"
+          >
             <Rocket className="mr-1 text-orange-600" size={20} />
             Hobbies
           </Link>

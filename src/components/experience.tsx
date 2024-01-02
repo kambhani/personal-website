@@ -9,7 +9,7 @@ export default function Experience() {
       time: "December 2023 — Present",
       position: "Software Engineer Intern",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui elit, interdum id nunc aliquet, sagittis faucibus massa. Donec efficitur tortor tortor, vel ultricies ipsum venenatis id. Donec ullamcorper risus sit amet aliquet scelerisque. Etiam nisl magna, tristique quis erat eu, porttitor dignissim sem. In hac habitasse platea dictumst. Maecenas massa risus, pharetra eu tortor eu, ullamcorper auctor leo. Vivamus ex metus, efficitur eget urna eget, sollicitudin faucibus augue. Mauris pharetra, mauris volutpat lacinia dignissim, lacus erat malesuada sapien, sit amet iaculis lacus urna eu lectus. Nunc quis velit nisl. Suspendisse vel tortor quis libero hendrerit commodo vitae eu justo. Curabitur egestas dolor sit amet sem venenatis vehicula. ",
+        "I am currently employed as a software engineer intern at District 4 Labs. My main tasks while here have had to do with frontend design and development with Vue, Nuxt, and PrimeVue. As a remote internship, I've had to utilize software like Teams, Outlook, Jira, and GitHub to ensure a smooth development experience. I've loved working here so far, and I'm excited to see what's to come.",
     },
     {
       name: "First Internet Bank",
@@ -17,7 +17,7 @@ export default function Experience() {
       time: "June 2022 — July 2022",
       position: "Intern",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui elit, interdum id nunc aliquet, sagittis faucibus massa. Donec efficitur tortor tortor, vel ultricies ipsum venenatis id. Donec ullamcorper risus sit amet aliquet scelerisque. Etiam nisl magna, tristique quis erat eu, porttitor dignissim sem. In hac habitasse platea dictumst. Maecenas massa risus, pharetra eu tortor eu, ullamcorper auctor leo. Vivamus ex metus, efficitur eget urna eget, sollicitudin faucibus augue. Mauris pharetra, mauris volutpat lacinia dignissim, lacus erat malesuada sapien, sit amet iaculis lacus urna eu lectus. Nunc quis velit nisl. Suspendisse vel tortor quis libero hendrerit commodo vitae eu justo. Curabitur egestas dolor sit amet sem venenatis vehicula. ",
+        "This was my second internship, and I got it through a local program known as Launch Fishers, which matched students up with businesses in the community. This was my only non-technical internship, as I spent most of my time shadowing various bank departments, includng HR, Facilities, Retail Banking, Mortgage, Risk Management, and Internal Audit. That said, I did create some Excel spreadsheets for tasks like modeling pricing and tracking inventory. I also got to volunteer at a local park with the other summer interns, and that was a lot of fun.",
     },
     {
       name: "Texavi",
@@ -25,7 +25,7 @@ export default function Experience() {
       time: "June 2021 — July 2021",
       position: "Software Development Intern",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui elit, interdum id nunc aliquet, sagittis faucibus massa. Donec efficitur tortor tortor, vel ultricies ipsum venenatis id. Donec ullamcorper risus sit amet aliquet scelerisque. Etiam nisl magna, tristique quis erat eu, porttitor dignissim sem. In hac habitasse platea dictumst. Maecenas massa risus, pharetra eu tortor eu, ullamcorper auctor leo. Vivamus ex metus, efficitur eget urna eget, sollicitudin faucibus augue. Mauris pharetra, mauris volutpat lacinia dignissim, lacus erat malesuada sapien, sit amet iaculis lacus urna eu lectus. Nunc quis velit nisl. Suspendisse vel tortor quis libero hendrerit commodo vitae eu justo. Curabitur egestas dolor sit amet sem venenatis vehicula. ",
+        "This was my first internship, completed between the junior and senior years of high school. Here, I created web components for Texavi's new learning management system (LMS), including accordions, fill in the blanks, flashcards, quiz questions, and drag-and-drop functionality. I made these using HTML, CSS, Bootstrap, jQuery, and PHP. While creating these components, I adhered to WCAG-AA accessible web design practices, particularly the guidelines surrounding color contrast and keyboard navigation. (Though, looking back, there was definitely more I should have been doing in this area.) This was a remote internship, and as such, I was on frequent Zoom calls with other people from the company, who were located in the UK and India. Overall, I would say that it was a positive experience as my first foray into the professional world.",
     },
   ];
 

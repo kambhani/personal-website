@@ -131,7 +131,9 @@ const NonMemoizedTreeMapHtmlNode = <Datum extends object>({
               width: `90%`,
               height: `90%`,
               writingMode:
-                animatedProps.labelRotation.toJSON() === 0 ? "" : "vertical-rl",
+                animatedProps.labelRotation.toJSON() === 0
+                  ? undefined
+                  : "vertical-rl",
               transform:
                 animatedProps.labelRotation.toJSON() === 0
                   ? ""

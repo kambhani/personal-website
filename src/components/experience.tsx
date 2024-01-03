@@ -36,7 +36,7 @@ export default function Experience() {
         mask: "conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/3rem 100%",
       }}
     >
-      <div className="mb-96">
+      <div className="mb-96 overflow-x-hidden">
         <div
           className="flex h-32 w-full flex-col items-center justify-start pt-24 font-semibold sm:h-64"
           id="experience"
@@ -61,37 +61,38 @@ export default function Experience() {
           </Parallax>
         </div>
       </div>
-      <div className="mx-auto flex w-11/12 flex-col gap-8 sm:w-2/3">
-        {comapny_info.map((company) => (
-          <Parallax key={company.name} scale={[1, 1.3]}>
-            <div
-              className="mb-16 rounded-xl border border-foreground bg-slate-200 p-8 shadow-xl dark:bg-slate-700"
-              key={company.name}
-            >
-              <div className="flex h-36 w-full items-center px-4">
-                <Image
-                  isZoomed
-                  className=""
-                  src={`/company_logos/${company.logo}`}
-                  alt={`Logo for ${company.name}`}
-                  width={80}
-                />
-                <Divider className="mx-4 h-full" orientation="vertical" />
-                <div className="pb-b font-light">
-                  <h3 className="font-semibold sm:text-xl">{company.name}</h3>
-                  <h4 className="text-sm font-light sm:text-lg">
-                    {company.position}
-                  </h4>
-                  <h4 className="text-sm font-light sm:text-lg">
-                    {company.time}
-                  </h4>
+      <div className="mx-auto flex w-full flex-col gap-8 overflow-x-hidden sm:w-2/3">
+        <div className="mx-auto w-11/12">
+          {comapny_info.map((company) => (
+            <Parallax key={company.name} scale={[1, 1.3]}>
+              <div
+                className="mb-16 rounded-xl border border-foreground bg-slate-200 p-8 shadow-xl dark:bg-slate-700"
+                key={company.name}
+              >
+                <div className="flex h-36 w-full items-center px-4">
+                  <Image
+                    isZoomed
+                    src={`/company_logos/${company.logo}`}
+                    alt={`Logo for ${company.name}`}
+                    width={80}
+                  />
+                  <Divider className="mx-4 h-full" orientation="vertical" />
+                  <div className="pb-b font-light">
+                    <h3 className="font-semibold sm:text-xl">{company.name}</h3>
+                    <h4 className="text-sm font-light sm:text-lg">
+                      {company.position}
+                    </h4>
+                    <h4 className="text-sm font-light sm:text-lg">
+                      {company.time}
+                    </h4>
+                  </div>
                 </div>
+                <Divider className="mb-2" />
+                <p className="text-sm">{company.description}</p>
               </div>
-              <Divider className="mb-2" />
-              <p className="text-sm">{company.description}</p>
-            </div>
-          </Parallax>
-        ))}
+            </Parallax>
+          ))}
+        </div>
       </div>
       <div className="h-40"></div>
     </div>

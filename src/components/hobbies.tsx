@@ -54,7 +54,7 @@ export default function Hobbies() {
         <div>
           <ScrollAnimation
             animateIn="fadeInLeft"
-            delay={1000}
+            delay={500}
             animateOnce={true}
           >
             {/* Image source: https://pixabay.com/vectors/violin-music-musical-instrument-156558/ */}
@@ -94,7 +94,7 @@ export default function Hobbies() {
         <div className="mx-auto w-11/12 md:w-full">
           <ScrollAnimation
             animateIn="fadeInRight"
-            delay={1000}
+            delay={500}
             animateOnce={true}
           >
             {/* Image source: https://pixabay.com/vectors/anatomy-biology-brain-thought-mind-1751201/ */}
@@ -200,7 +200,7 @@ export default function Hobbies() {
         <div>
           <ScrollAnimation
             animateIn="fadeInLeft"
-            delay={1000}
+            delay={500}
             animateOnce={true}
           >
             {/* Image source: https://www.dropbox.com/sh/0mdu6zwzlkncu5a/AAAkreGuTFr1DgAsNIb88Lopa/Icons?preview=Clan_Wars_App_Icon_2020_App_Store_Format.png */}

@@ -61,7 +61,7 @@ export default function Experience() {
           </Parallax>
         </div>
       </div>
-      <div className="mx-auto flex w-full flex-col gap-8 overflow-x-hidden overflow-y-visible pt-96">
+      <div className="mx-auto flex w-full flex-col gap-8 overflow-x-hidden overflow-y-visible pb-40 pt-96">
         <div className="overflow-x-visisble mx-auto w-11/12 overflow-y-visible sm:w-2/3">
           {comapny_info.map((company) => (
             <Parallax key={company.name} scale={[1, 1.3]}>
@@ -94,7 +94,6 @@ export default function Experience() {
           ))}
         </div>
       </div>
-      <div className="h-40"></div>
     </div>
   );
 }

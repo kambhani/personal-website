@@ -32,11 +32,10 @@ export default function Footer() {
           </p>
         </div>
         <div className="col-span-12 font-mono sm:col-span-6 sm:-mt-16 lg:col-span-4">
-          A computer science student in wonder with the world around him, from
-          the deepest of seas to the highest of mountains. A computer scientist
-          with a thirst for knowledge, from malloc() and free() to the internet
-          and its complexity. A leader who will leave his mark on the world, one
-          line of code at a time.
+          Thanks for taking the time to check out my website! I hope you enjoyed
+          getting to know me a little better. I'm always excited to meet new
+          people, so don't hesitate to reach out if you have any questions or
+          just want to connect.
         </div>
         <div className="col-span-12 mt-12 flex justify-around lg:col-span-3 lg:-mt-16 lg:grid lg:grid-cols-2">
           <Link
@@ -59,7 +58,7 @@ export default function Footer() {
           </Link>
           <Link
             className="flex items-center justify-end text-foreground"
-            href="#"
+            href="/resume.pdf"
           >
             <File size={48} />
           </Link>

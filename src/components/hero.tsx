@@ -1,11 +1,18 @@
 import { useEffect, useState } from "react";
 import useDarkMode from "use-dark-mode";
-import { Image } from "@nextui-org/react";
+import { Image, Link, Button } from "@nextui-org/react";
 import { Parallax } from "react-scroll-parallax";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import type { Engine } from "@tsparticles/engine";
 import { loadSeaAnemonePreset } from "@tsparticles/preset-sea-anemone";
 import { loadFountainPreset } from "@tsparticles/preset-fountain";
+import {
+  LinkedinLogo,
+  GithubLogo,
+  EnvelopeSimple,
+  File,
+} from "@phosphor-icons/react";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Hero() {
   const [init, setInit] = useState(false);
@@ -38,7 +45,7 @@ export default function Hero() {
           />
         )}
         <div className="min-h-screen">
-          <div className="mx-auto mb-6 flex w-2/3 max-w-[1400px] justify-center pt-24 md:pt-40">
+          <div className="mx-auto mb-4 flex w-2/3 max-w-[1400px] justify-center pt-20 md:pt-32">
             <Image
               isBlurred
               isZoomed
@@ -49,9 +56,50 @@ export default function Hero() {
               className="flex-[0_0_100%]"
             />
           </div>
+          <div className="mx-auto mb-4 flex justify-center gap-8">
+            <Button
+              as={Link}
+              isIconOnly={true}
+              variant="solid"
+              className="flex h-14 w-14 items-center justify-center shadow-xl"
+              href="https://www.linkedin.com/in/anishkambhampati/"
+            >
+              <LinkedinLogo size={44} />
+            </Button>
+            <Button
+              as={Link}
+              isIconOnly={true}
+              variant="solid"
+              className="flex h-14 w-14 items-center justify-center shadow-xl"
+              href="https://github.com/kambhani/"
+            >
+              <GithubLogo size={44} />
+            </Button>
+            <Button
+              as={Link}
+              isIconOnly={true}
+              variant="solid"
+              className="flex h-14 w-14 items-center justify-center shadow-xl"
+              href="mailto: kraghuranish@gmail.com"
+            >
+              <EnvelopeSimple size={44} />
+            </Button>
+            <Button
+              as={Link}
+              isIconOnly={true}
+              variant="solid"
+              className="flex h-14 w-14 items-center justify-center shadow-xl"
+              href="/resume.pdf"
+            >
+              <File size={44} />
+            </Button>
+          </div>
           <h1 className="mx-auto w-4/5 rounded-2xl bg-background p-2 text-center font-mono text-2xl sm:w-2/3 sm:text-3xl">
-            Welcome to my digital space, where creativity meets curiosity, and I
-            share my journey, passions, and discoveries with the world.
+            <TypeAnimation
+              sequence={[
+                "Hi! I'm Anish Kambhampati, a computer science student at Purdue University passionate about secure, cloud-based web application development.",
+              ]}
+            />
           </h1>
         </div>
       </Parallax>

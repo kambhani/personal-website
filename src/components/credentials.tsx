@@ -123,9 +123,9 @@ export default function Credentials() {
   });
 
   return (
-    <div id="certifications" className="min-h-screen pb-96">
+    <div id="certifications" className="min-h-screen overflow-x-hidden pb-96">
       <Parallax speed={50} className="bg-background">
-        <div className="3xl:h-[calc(50vw_+_2rem)] overflow-hidden sm:h-[40rem] md:h-[45rem] lg:h-[50rem] xl:h-[55rem] 2xl:h-[60rem]">
+        <div className="sm:h-[40rem] md:h-[45rem] lg:h-[50rem] xl:h-[55rem] 2xl:h-[60rem] 3xl:h-[calc(50vw_+_2rem)]">
           <svg className="" viewBox="0 0 500 500">
             <path
               id="curve"
@@ -139,7 +139,7 @@ export default function Credentials() {
           </svg>
         </div>
 
-        <div className="xs:mt-20 mt-52 sm:mt-0">
+        <div className="mt-52 max-w-full xs:mt-20 sm:mt-0">
           <Carousel
             slides={slides}
             showNavigation={false}

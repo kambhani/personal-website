@@ -36,7 +36,7 @@ export default function Hobbies() {
   }, []);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden">
       <Parallax
         scaleY={[-1, 0]}
         className="-mt-[31vw] mb-24 h-[30vw] w-full origin-bottom border-[1rem] border-b-0 border-lime-400 bg-lime-400 dark:border-lime-600 dark:bg-lime-600"

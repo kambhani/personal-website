@@ -156,19 +156,23 @@ export default function Education() {
     <Parallax speed={0}>
       <section className="bg-emerald-200 pb-32 dark:bg-emerald-900">
         <div
-          className="flex h-screen w-full flex-col justify-start overflow-hidden pt-24 text-left font-semibold"
+          className="flex h-96 w-full flex-col justify-start overflow-hidden pt-24 text-left font-semibold md:h-[32rem] xl:h-[54rem]"
           id="education"
         >
           <Parallax translateX={[60, -20]}>
-            <h2 className="text-5xl md:text-[6rem] xl:text-[12rem]">MY</h2>
+            <h2 className="text-5xl sm:text-6xl md:text-[6rem] xl:text-[12rem]">
+              MY
+            </h2>
           </Parallax>
           <Parallax translateX={[70, -20]}>
-            <h2 className="text-5xl md:text-[6rem] xl:text-[12rem]">
+            <h2 className="text-5xl sm:text-6xl md:text-[6rem] xl:text-[12rem]">
               EDUCATION
             </h2>
           </Parallax>
           <Parallax translateX={[80, -20]}>
-            <h2 className="text-5xl md:text-[6rem] xl:text-[12rem]">JOURNEY</h2>
+            <h2 className="text-5xl sm:text-6xl md:text-[6rem] xl:text-[12rem]">
+              JOURNEY
+            </h2>
           </Parallax>
         </div>
         <div className="h-[25vh]"></div>

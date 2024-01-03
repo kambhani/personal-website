@@ -64,12 +64,14 @@ export default function Footer() {
           </Link>
         </div>
         <div className="col-span-12 mt-20 text-center font-mono text-sm lg:mt-8">
-          A{" "}
-          <Link size="sm" href="https://github.com/kambhani/personal-website">
-            free and open-source
-          </Link>{" "}
-          creation, licensed MIT. &copy; Anish Kambhampati,{" "}
-          {new Date().getFullYear()}
+          <h3>
+            A{" "}
+            <Link size="sm" href="https://github.com/kambhani/personal-website">
+              free and open-source
+            </Link>{" "}
+            creation, licensed MIT
+          </h3>
+          <h3>&copy; Anish Kambhampati, {new Date().getFullYear()}</h3>
         </div>
       </div>
     </div>

@@ -159,15 +159,15 @@ export default function Education() {
           className="flex h-screen w-full flex-col justify-start overflow-hidden pt-24 text-left font-semibold"
           id="education"
         >
-          <Parallax translateX={[50, -20]}>
+          <Parallax translateX={[60, -20]}>
             <h2 className="text-5xl md:text-[6rem] xl:text-[12rem]">MY</h2>
           </Parallax>
-          <Parallax translateX={[60, -20]}>
+          <Parallax translateX={[70, -20]}>
             <h2 className="text-5xl md:text-[6rem] xl:text-[12rem]">
               EDUCATION
             </h2>
           </Parallax>
-          <Parallax translateX={[70, -20]}>
+          <Parallax translateX={[80, -20]}>
             <h2 className="text-5xl md:text-[6rem] xl:text-[12rem]">JOURNEY</h2>
           </Parallax>
         </div>

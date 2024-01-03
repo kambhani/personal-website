@@ -32,7 +32,7 @@ export default function Hero() {
   }, []);
   return (
     <div id="home" className="bg-background">
-      <Parallax speed={-50}>
+      <Parallax className="pb-[20vh]" speed={-50}>
         {init && darkMode.value ? (
           <Particles
             className="fixed z-[-1] w-full"

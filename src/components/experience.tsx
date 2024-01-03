@@ -36,7 +36,7 @@ export default function Experience() {
         mask: "conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/3rem 100%",
       }}
     >
-      <div className="mb-96 overflow-x-hidden">
+      <div className="overflow-x-hidden">
         <div
           className="flex h-32 w-full flex-col items-center justify-start pt-24 font-semibold sm:h-64"
           id="experience"
@@ -61,8 +61,8 @@ export default function Experience() {
           </Parallax>
         </div>
       </div>
-      <div className="mx-auto flex w-full flex-col gap-8 overflow-x-hidden sm:w-2/3">
-        <div className="mx-auto w-11/12">
+      <div className="mx-auto flex w-full flex-col gap-8 overflow-x-hidden overflow-y-visible pt-96">
+        <div className="overflow-x-visisble mx-auto w-11/12 overflow-y-visible sm:w-2/3">
           {comapny_info.map((company) => (
             <Parallax key={company.name} scale={[1, 1.3]}>
               <div

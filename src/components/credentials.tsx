@@ -123,7 +123,7 @@ export default function Credentials() {
   });
 
   return (
-    <div id="certifications" className="min-h-screen overflow-x-hidden pb-96">
+    <div id="certifications" className="min-h-screen overflow-hidden pb-96">
       <Parallax speed={50} className="bg-background">
         <div className="sm:h-[40rem] md:h-[45rem] lg:h-[50rem] xl:h-[55rem] 2xl:h-[60rem] 3xl:h-[calc(50vw_+_2rem)]">
           <svg className="" viewBox="0 0 500 500">

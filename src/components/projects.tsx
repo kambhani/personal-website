@@ -50,12 +50,13 @@ export default function Projects() {
     },
     {
       id: nanoid(),
-      name: "Omni Role Bot",
-      filename: "omni_role_bot.png",
-      github: "https://github.com/kambhani/omni-role-bot",
+      name: "Shield",
+      filename: "shield.png",
+      preview:
+        "https://discord.com/oauth2/authorize?client_id=1256625015672147968&permissions=8&integration_type=0&scope=bot",
       description:
-        "A discord bot that can apply a single role to a specified list of members or remove a role from everyone in the server. I created this bot in response to a need by a server admin in one of my discord servers. It is currently deployed with a PaaS offering from Bot-Hosting.net.",
-      technologies: ["discord.js", "JavaScript", "TypeScript"],
+        "A discord bot that provides a wide variety of utility functions. It include dumps of server members, audit logs, and emojis, rate limit configuration to prevent server destruction, and one-off functions that other people have wanted. It is currently deployed with a PaaS offering from Bot-Hosting.net.",
+      technologies: ["discord.js", "Postgres", "TypeScript"],
     },
     {
       id: nanoid(),
@@ -96,6 +97,45 @@ export default function Projects() {
         "A command-line utility to solve sudoku puzzles, written in C++. It can solve 3x3, 4x4, or even 5x5 sudokus. I also ported the logic to a React web app and created a GUI for the solver. Due to the simplicity of the solving logic involved, it can only solve beginner-level puzzles.",
       technologies: ["C++", "React", "TailwindCSS"],
     },
+    {
+      id: nanoid(),
+      name: "aire",
+      filename: "aire.png",
+      github: "https://github.com/kambhani/aire",
+      preview: "https://aire-xi.vercel.app/",
+      description:
+        "I worked with 3 other developers to create aire (AI REsume) at Hacklytics 2024. This website streamlines the job application process by automatically tailoring resumes and cover letters to fit specific job postings. Users can upload their existing resume, which is parsed for relevant details, and then simply paste a job description to receive a matching score and customized documents. We overcame challenges with data parsing and profile management to create a seamless, user-friendly experience.",
+      technologies: [
+        "Next Auth",
+        "Next.js",
+        "OpenAI API",
+        "Overleaf API",
+        "Prisma",
+        "ShadUI",
+        "Tailwind CSS",
+        "tRPC",
+        "TypeScript",
+      ],
+    },
+    {
+      id: nanoid(),
+      name: "Boilerchain",
+      filename: "boilerchain.svg",
+      github: "https://github.com/kambhani/boilerchain",
+      preview: "https://boilerchain.us/",
+      description:
+        "Boilerchain is a web app I created during the Boilermake XI hackathon that allows users to mine and transfer a cryptocurrency called Boilercoin. Despite having no prior experience with the backend technologies involved, I successfully built a functioning blockchain and integrated it into the app within 36 hours. The project taught me a lot about the theory behind cryptocurrencies and the challenges of developing a production-level application under time constraints. After the hackathon was over, I deployed the app to the web with Vercel.",
+      technologies: [
+        "AWS Amplify",
+        "Bruno",
+        "Chakra UI",
+        "Docker",
+        "FastAPI",
+        "React",
+        "Redis",
+        "TypeScript",
+      ],
+    },
   ];
 
   return (
@@ -121,12 +161,15 @@ export default function Projects() {
                 <Card className="h-full bg-sky-200 p-1 dark:bg-sky-950">
                   <CardHeader className="justify-between">
                     <div className="flex gap-5">
-                      <Image
-                        className="rounded-none"
-                        src={`/projects/${project.filename}`}
-                        height={64}
-                        width={64}
-                      />
+                      <div className="flex items-center justify-center ">
+                        <Image
+                          className="my-auto"
+                          src={`/projects/${project.filename}`}
+                          height={64}
+                          width={64}
+                        />
+                      </div>
+
                       <div className="flex flex-col items-start justify-center gap-2">
                         <h4 className="text-lg font-semibold leading-none">
                           {project.name}

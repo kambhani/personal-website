@@ -1,7 +1,7 @@
 // A backup of the Codeforces data used in case they shut down their API
 // Also used for typing
 
-export const data = {
+export const cfData = {
   status: "OK",
   result: [
     {
@@ -148,7 +148,16 @@ export const data = {
       oldRating: 1240,
       newRating: 1274,
     },
+    {
+      contestId: 1925,
+      contestName: "Codeforces Round 921 (Div. 2)",
+      handle: "liquidplasma",
+      rank: 8040,
+      ratingUpdateTimeSeconds: 1706373900,
+      oldRating: 1274,
+      newRating: 1224,
+    },
   ],
 };
 
-export type cfUserRating = (typeof data.result)[0];
+export type cfUserRating = (typeof cfData.result)[0];

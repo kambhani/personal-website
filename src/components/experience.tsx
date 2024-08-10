@@ -4,12 +4,20 @@ import { Parallax } from "react-scroll-parallax";
 export default function Experience() {
   const comapny_info = [
     {
+      name: "Elevance Health",
+      logo: "elevance_health.jpeg",
+      time: "May 2024 — August 2024",
+      position: "Systems Analyst Intern",
+      description:
+        "My fourth internship was at Elevance Health (formerly Anthem), a large healthcare insurance company. My primary project here was to map fields between internal databases and an external provider API. Where values differed between Availity and our databases, I constructed crosswalks, or codeset to codeset mappiings. From this experience, I learned how to think from a business and systems point of view, rather than the standard developer view I've always had. I also learned the importance of documentation.",
+    },
+    {
       name: "District 4 Labs",
       logo: "district_4_labs.jpeg",
-      time: "December 2023 — Present",
+      time: "December 2023 — May 2024",
       position: "Software Engineer Intern",
       description:
-        "I am currently employed as a software engineer intern at District 4 Labs. My main tasks while here have had to do with frontend design and development with Vue, Nuxt, and PrimeVue. As a remote internship, I've had to utilize software like Teams, Outlook, Jira, and GitHub to ensure a smooth development experience. I've loved working here so far, and I'm excited to see what's to come.",
+        "During my fourth semester at Purdue, I worked part-time as a software engineering intern at District 4 Labs. My main tasks there had to do with frontend design and development with Vue, Nuxt, and PrimeVue. As a remote internship, I utilized software like Teams, Outlook, Jira, and GitHub to ensure a smooth development experience. I enjoyed working at the place and seeing how a small company embraced rapid change in their tech stack.",
     },
     {
       name: "First Internet Bank",

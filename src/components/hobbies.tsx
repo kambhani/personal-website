@@ -3,6 +3,7 @@ import { Parallax } from "react-scroll-parallax";
 import { ResponsiveLine } from "@nivo/line";
 import { Link } from "@nextui-org/react";
 import type { cfUserRating } from "../cf_data";
+import { cfData } from "../cf_data";
 import useDarkMode from "use-dark-mode";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.compat.css";
@@ -18,6 +19,7 @@ export default function Hobbies() {
   >([]);
 
   useEffect(() => {
+    // This is being blocked by CORS, so have to use fallback data
     fetch("https://codeforces.com/api/user.rating?handle=liquidplasma")
       .then((res) => res.json())
       .then((json: { status: string; result: cfUserRating[] }) => {
@@ -32,7 +34,19 @@ export default function Hobbies() {
           },
         ]);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        console.log(err);
+        setData([
+          {
+            id: "rating",
+            data: cfData.result.map((contest) => ({
+              ...contest,
+              x: new Date(contest.ratingUpdateTimeSeconds * 1000),
+              y: contest.newRating,
+            })),
+          },
+        ]);
+      });
   }, []);
 
   return (
@@ -196,7 +210,7 @@ export default function Hobbies() {
           </ScrollAnimation>
         )}
       </div>
-      <div className="mx-auto mb-[75vh] w-11/12 gap-2 md:w-5/6 xl:w-3/4">
+      <div className="mx-auto mb-[50vh] w-11/12 gap-2 md:w-5/6 xl:w-3/4">
         <div>
           <ScrollAnimation
             animateIn="fadeInLeft"
@@ -206,7 +220,7 @@ export default function Hobbies() {
             {/* Image source: https://www.dropbox.com/sh/0mdu6zwzlkncu5a/AAAkreGuTFr1DgAsNIb88Lopa/Icons?preview=Clan_Wars_App_Icon_2020_App_Store_Format.png */}
             <img
               className="float-left h-40 pr-3 sm:h-52 sm:pr-4 md:h-60 xl:h-80 xl:pb-4 xl:pr-8"
-              src="/hobbies/cr.png"
+              src="/hobbies/cr.webp"
             />
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeInRight" animateOnce={true}>
@@ -234,6 +248,44 @@ export default function Hobbies() {
               all the more enjoyable. I foresee myself continuing to play the
               game into the foreseeable future. And who knows, maybe I'll see
               you in the arena!
+            </p>
+          </ScrollAnimation>
+        </div>
+      </div>
+      <div className="mx-auto mb-[75vh] gap-2 md:w-5/6 xl:w-3/4">
+        <div className="mx-auto w-11/12 md:w-full">
+          <ScrollAnimation
+            className="fill-blue-500"
+            animateIn="fadeInRight"
+            delay={500}
+            animateOnce={true}
+          >
+            {/* Image source: https://pixabay.com/vectors/weight-sport-crossfit-training-1399281/ */}
+            <img
+              className="mx-auto h-80 md:float-right md:h-56 lg:h-80"
+              src="/hobbies/gym.svg"
+            />
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
+            <h3 className="mb-6 text-5xl sm:text-5xl md:text-[4rem] lg:mb-6 lg:text-[5rem]">
+              Working Out
+            </h3>
+          </ScrollAnimation>
+          <ScrollAnimation
+            animateIn="fadeInLeft"
+            delay={250}
+            animateOnce={true}
+          >
+            <p className="sm:text-lg lg:text-xl">
+              I've recently gotten into going to the gym and working out. Having
+              worked so hard to keep my mind in peak condition, I decided it was
+              time to do the same with the rest of my body. I don't do anything
+              fancy, just bench, pull-ups, and squats. Over time, I've noticed
+              my body becoming stronger, and that drives me to keep on going and
+              keep on getting those gains. I still try to be active outside the
+              gym, and you can often catch me playing sports like tennis with my
+              friends. We're not professionals at these sports by any means, but
+              it helps us stay active, and we always have a good time.
             </p>
           </ScrollAnimation>
         </div>

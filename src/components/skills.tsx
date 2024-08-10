@@ -16,15 +16,14 @@ export default function Skills() {
       {
         name: "CI/CD",
         children: [
-          { name: "Amazon Web Services", level: 3 },
-          { name: "AWS Amplify", level: 3 },
-          { name: "Docker", level: 2 },
+          { name: "AWS", level: 5 },
+          { name: "Docker", level: 3 },
           { name: "Git", level: 8 },
           { name: "GitHub", level: 9 },
-          { name: "Google Cloud Platform", level: 4 },
-          { name: "Microsoft Azure", level: 4 },
+          { name: "GCP", level: 4 },
+          { name: "Azure", level: 4 },
           { name: "Netlify", level: 2 },
-          { name: "Vercel", level: 3 },
+          { name: "Vercel", level: 5 },
         ],
       },
       {
@@ -40,8 +39,8 @@ export default function Skills() {
       {
         name: "Scripting",
         children: [
-          { name: "discord.js", level: 3 },
-          { name: "lxml", level: 3 },
+          { name: "discord.js", level: 7 },
+          { name: "lxml", level: 2 },
           { name: "Python", level: 5 },
         ],
       },
@@ -62,13 +61,13 @@ export default function Skills() {
           { name: "JavaScript", level: 10 },
           { name: "JQuery", level: 4 },
           { name: "HTML", level: 10 },
-          { name: "Next.js", level: 3 },
+          { name: "Next.js", level: 8 },
           { name: "Node.js", level: 9 },
           { name: "Nuxt", level: 4 },
           { name: "PHP", level: 1 },
           { name: "React", level: 9 },
           { name: "TailwindCSS", level: 10 },
-          { name: "TypeScript", level: 8 },
+          { name: "TypeScript", level: 10 },
           { name: "Vue", level: 4 },
         ],
       },
@@ -76,7 +75,7 @@ export default function Skills() {
         name: "Mobile Development",
         children: [
           { name: "Dart", level: 2 },
-          { name: "React Native", level: 3 },
+          { name: "React Native", level: 4 },
         ],
       },
       {
@@ -92,8 +91,10 @@ export default function Skills() {
         name: "Databases",
         children: [
           { name: "MongoDB", level: 7 },
-          { name: "SQL", level: 1 },
-          { name: "SQLite", level: 2 },
+          { name: "SQL", level: 5 },
+          { name: "SQLite", level: 3 },
+          { name: "Postgres", level: 4 },
+          { name: "Redis", level: 2 },
         ],
       },
     ],
@@ -109,7 +110,7 @@ export default function Skills() {
           MY SKILLS
         </h2>
         <div className="mx-auto mt-20 flex w-11/12 flex-row flex-wrap gap-4">
-          <div className="mb-40 h-[80rem] w-full bg-background sm:mx-auto sm:w-11/12">
+          <div className="mb-40 h-[90rem] w-full bg-background sm:mx-auto sm:w-11/12">
             <ResponsiveTreeMapHtml
               data={data}
               identity="name"

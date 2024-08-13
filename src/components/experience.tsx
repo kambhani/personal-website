@@ -9,7 +9,7 @@ export default function Experience() {
       time: "May 2024 — August 2024",
       position: "Systems Analyst Intern",
       description:
-        "My fourth internship was at Elevance Health (formerly Anthem), a large healthcare insurance company. My primary project here was to map fields between internal databases and an external provider API. Where values differed between Availity and our databases, I constructed crosswalks, or codeset to codeset mappiings. From this experience, I learned how to think from a business and systems point of view, rather than the standard developer view I've always had. I also learned the importance of documentation.",
+        "My fourth internship was as a systems analyst intern at Elevance Health (formerly Anthem), a large healthcare insurance company. My primary project here was to map fields between internal databases and an external provider API. Where values differed between our databases and that API, I constructed crosswalks, or codeset to codeset mappiings. From this experience, I learned how to think from a business and systems point of view, rather than the standard developer view I've always had. I also learned the importance of documentation.",
     },
     {
       name: "District 4 Labs",

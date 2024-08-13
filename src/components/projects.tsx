@@ -52,11 +52,22 @@ export default function Projects() {
       id: nanoid(),
       name: "Shield",
       filename: "shield.png",
-      preview:
-        "https://discord.com/oauth2/authorize?client_id=1256625015672147968&permissions=8&integration_type=0&scope=bot",
+      preview: "https://shieldbot.app",
       description:
-        "A discord bot that provides a wide variety of utility functions. It include dumps of server members, audit logs, and emojis, rate limit configuration to prevent server destruction, and one-off functions that other people have wanted. It is currently deployed with a PaaS offering from Bot-Hosting.net.",
-      technologies: ["discord.js", "Postgres", "TypeScript"],
+        "Shield is an advanced Discord bot that provides an array of advanced server administration and security features. These features include server exports of members, audit logs, and emojis, as well as several role administration commands. Shield also comes with event rate limiting and bot protection to mitigate potential server abuse. For ease of use, Shield comes with dashboard and documentation websites to interact with the bot. And for advanced features such as logging and shorter command cooldowns, Shield has two premium tiers available as a subscription. This is the first application I have written that has revenue-generating potential, and I'm excited to see where it goes. Give it a try!",
+      technologies: [
+        "Docker",
+        "Dokku",
+        "Nextra",
+        "pnpm",
+        "Postgres",
+        "Remix",
+        "Stripe",
+        "Tailwind CSS",
+        "TypeScript",
+        "Turborepo",
+        "Zod",
+      ],
     },
     {
       id: nanoid(),

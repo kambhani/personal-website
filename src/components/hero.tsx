@@ -52,7 +52,7 @@ export default function Hero() {
               radius="full"
               width={300}
               alt="A headshot of Anish Kambhampati, with a backdrop of water and greenry."
-              src="/hero_headshot.png"
+              src="/hero_headshot.jpeg"
               className="flex-[0_0_100%]"
             />
           </div>

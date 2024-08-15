@@ -56,17 +56,17 @@ export default function Projects() {
       description:
         "Shield is an advanced Discord bot that provides an array of advanced server administration and security features. These features include server exports of members, audit logs, and emojis, as well as several role administration commands. Shield also comes with event rate limiting and bot protection to mitigate potential server abuse. For ease of use, Shield comes with dashboard and documentation websites to interact with the bot. And for advanced features such as logging and shorter command cooldowns, Shield has two premium tiers available as a subscription. This is the first application I have written that has revenue-generating potential, and I'm excited to see where it goes. Give it a try!",
       technologies: [
+        "discord.js",
         "Docker",
         "Dokku",
         "Nextra",
-        "pnpm",
         "Postgres",
         "Remix",
         "Stripe",
         "Tailwind CSS",
         "TypeScript",
         "Turborepo",
-        "Zod",
+        "VPS",
       ],
     },
     {

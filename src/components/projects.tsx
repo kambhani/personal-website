@@ -17,39 +17,6 @@ export default function Projects() {
   const projects = [
     {
       id: nanoid(),
-      name: "Boilerexams",
-      filename: "boilerexams.png",
-      github: "https://github.com/boilerexams",
-      preview: "https://boilerexams.com",
-      description:
-        "A fullstack website that enables students at Purdue University to effectively study for their upcoming exams. It features exam archives, an elegant and accessible user interface, student-recorded explanations, and rich data aggregation. Currently used by over 4,000 students. This is an ongoing group effort involving 20+ people; I serve as a frontend developer.",
-      technologies: [
-        "Astro",
-        "Docker",
-        "Judge0",
-        "React",
-        "TailwindCSS",
-        "Typescript",
-      ],
-    },
-    {
-      id: nanoid(),
-      name: "Clash Royale War Deck Builder",
-      filename: "cr_war_deck_builder.png",
-      github: "https://github.com/kambhani/cr-war-deck-builder",
-      description:
-        "An application to programmtically generate war deck sets in Clash Royale. It works by scraping RoyaleAPI for meta deck sets, using the Supercell API to get player card levels, and running an algorithm to determine the best deck combinations. Features both a command-line interface and discord integration. Formerly depoyed via GCP but discontinued after the card evolution update rendered the algorithm logic obsolete.",
-      technologies: [
-        "Google Cloud Platform",
-        "pycord",
-        "Python",
-        "REST APIs",
-        "SQLite",
-        "Web scraping",
-      ],
-    },
-    {
-      id: nanoid(),
       name: "Shield",
       filename: "shield.png",
       preview: "https://shieldbot.app",
@@ -68,6 +35,123 @@ export default function Projects() {
         "Turborepo",
         "VPS",
       ],
+    },
+    {
+      id: nanoid(),
+      name: "Boilerexams",
+      filename: "boilerexams.png",
+      github: "https://github.com/boilerexams",
+      preview: "https://boilerexams.com",
+      description:
+        "A fullstack website that enables students at Purdue University to effectively study for their upcoming exams. It features exam archives, an elegant and accessible user interface, student-recorded explanations, and rich data aggregation. Currently used by over 4,000 students. This is an ongoing group effort involving 20+ people; I serve as a frontend developer.",
+      technologies: [
+        "Astro",
+        "Docker",
+        "Judge0",
+        "React",
+        "TailwindCSS",
+        "Typescript",
+      ],
+    },
+    {
+      id: nanoid(),
+      name: "Crypto Arbitrage Trading (CAT)",
+      filename: "cat.png",
+      github: "https://github.com/Boiler-Quant-Finance-Group/CAT",
+      description:
+        "During the spring of 2024, I worked with fellow developers in the Boiler Quant Finance Group (BQFG) to explore the potential for arbitrage in the crypto market. We analyzed latency across cryptocurrency exchanges, collected exchange rate data, optimized our arbitrage detection algorithm, and explored the accuracy of ML models in predicting future exchange rates. My specific development work included adding multithreading support to our arbitrage algorithms and testing the efficacy of a gradient boosting model on exchange rate prediction. We found that, of the three models we tested (LSTM, ARIMA, and gradient boosting), that the LSTM model had the strongest predictive power.",
+      technologies: [
+        "ccxt",
+        "concurrent.futures",
+        "Matplotlib",
+        "NumPy",
+        "pandas",
+        "Python",
+        "scikit-learn",
+        "XGBoost",
+      ],
+    },
+    {
+      id: nanoid(),
+      name: "Boilerchain",
+      filename: "boilerchain.svg",
+      github: "https://github.com/kambhani/boilerchain",
+      preview: "https://boilerchain.us/",
+      description:
+        "Boilerchain is a web app I created during the Boilermake XI hackathon that allows users to mine and transfer a cryptocurrency called Boilercoin. Despite having no prior experience with the backend technologies involved, I successfully built a functioning blockchain and integrated it into the app within 36 hours. Boilerchain won an award from Bloomberg for Best FinTech Hack at the hackathon's conclusion. The project taught me a lot about the theory behind cryptocurrencies and the challenges of developing a production-level application under time constraints. After the hackathon was over, I deployed the app to the web with Vercel.",
+      technologies: [
+        "AWS Amplify",
+        "Bruno",
+        "Chakra UI",
+        "Docker",
+        "FastAPI",
+        "React",
+        "Redis",
+        "TypeScript",
+      ],
+    },
+    {
+      id: nanoid(),
+      name: "aire",
+      filename: "aire.png",
+      github: "https://github.com/kambhani/aire",
+      preview: "https://aire-xi.vercel.app/",
+      description:
+        "I worked with 3 other developers to create aire (AI REsume) at Hacklytics 2024. This website streamlines the job application process by automatically tailoring resumes and cover letters to fit specific job postings. Users can upload their existing resume, which is parsed for relevant details, and then simply paste a job description to receive a matching score and customized documents. We overcame challenges with data parsing and profile management to create a seamless, user-friendly experience.",
+      technologies: [
+        "Next Auth",
+        "Next.js",
+        "OpenAI API",
+        "Overleaf API",
+        "Prisma",
+        "ShadUI",
+        "Tailwind CSS",
+        "tRPC",
+        "TypeScript",
+      ],
+    },
+    {
+      id: nanoid(),
+      name: "Boiler Tickets",
+      filename: "boilertickets.png",
+      github: "https://github.com/kambhani/boilertickets",
+      description:
+        "A simple ticket exchange Discord bot. It supports user registration, email verification (based on email domain), email blacklisting, and user data deletion. I was inspired to create this simple bot after learning that the Purdue Ticket Exchange server was shutting down. Though my intention is to use it for Purdue specifically, the email validation logic involved can be applied to any Discord server that wants to restrict access to those with a certain email domain.",
+      technologies: [
+        "Biome",
+        "Bun",
+        "discord.js",
+        "Drizzle ORM",
+        "libSQL",
+        "Nodemailer",
+      ],
+    },
+    {
+      id: nanoid(),
+      name: "Clash Royale War Deck Builder",
+      filename: "cr_war_deck_builder.png",
+      github: "https://github.com/kambhani/cr-war-deck-builder",
+      description:
+        "An application to programmtically generate war deck sets in Clash Royale. It works by scraping RoyaleAPI for meta deck sets, using the Supercell API to get player card levels, and running an algorithm to determine the best deck combinations. Features both a command-line interface and discord integration. Formerly depoyed via GCP but discontinued after the card evolution update rendered the algorithm logic obsolete.",
+      technologies: [
+        "Google Cloud Platform",
+        "lxml",
+        "pycord",
+        "Python",
+        "REST APIs",
+        "SQLite",
+        "Web scraping",
+      ],
+    },
+    {
+      id: nanoid(),
+      name: "Tripath Inc.",
+      filename: "tripath.png",
+      github: "https://github.com/kambhani/astro-theme-stone",
+      preview: "https://thetripathinc.com/",
+      description:
+        "A simple website for my mom's company. My brother and I created it by forking a minimalist Astro template and adjusting the structure to our liking. I helped set the project up, added a backend route to the contact form, and deployed the website using Vercel.",
+      technologies: ["Alpine.js", "Astro", "Mailgun", "Tailwind CSS", "Vercel"],
     },
     {
       id: nanoid(),
@@ -100,6 +184,23 @@ export default function Projects() {
     },
     {
       id: nanoid(),
+      name: "HSE College View",
+      filename: "hse-college-view.png",
+      github: "https://github.com/kambhani/hse-college-view",
+      description:
+        "A web app to export Naviance admissions data and then view that data in a web browser. I used user JWTs for fetching the data, MongoDB for storing the data, express and handlebars to render the pages, and Chart.js to create the visualizations. This project was developed as part of my high school's software development class.",
+      technologies: [
+        "Bootstrap",
+        "Chart.js",
+        "Express",
+        "Handlebars",
+        "HTML",
+        "JWTs",
+        "MongoDB",
+      ],
+    },
+    {
+      id: nanoid(),
       name: "Sudoku Solver",
       filename: "sudoku-solver.png",
       github: "https://github.com/kambhani/sudoku-solver",
@@ -107,45 +208,6 @@ export default function Projects() {
       description:
         "A command-line utility to solve sudoku puzzles, written in C++. It can solve 3x3, 4x4, or even 5x5 sudokus. I also ported the logic to a React web app and created a GUI for the solver. Due to the simplicity of the solving logic involved, it can only solve beginner-level puzzles.",
       technologies: ["C++", "React", "TailwindCSS"],
-    },
-    {
-      id: nanoid(),
-      name: "aire",
-      filename: "aire.png",
-      github: "https://github.com/kambhani/aire",
-      preview: "https://aire-xi.vercel.app/",
-      description:
-        "I worked with 3 other developers to create aire (AI REsume) at Hacklytics 2024. This website streamlines the job application process by automatically tailoring resumes and cover letters to fit specific job postings. Users can upload their existing resume, which is parsed for relevant details, and then simply paste a job description to receive a matching score and customized documents. We overcame challenges with data parsing and profile management to create a seamless, user-friendly experience.",
-      technologies: [
-        "Next Auth",
-        "Next.js",
-        "OpenAI API",
-        "Overleaf API",
-        "Prisma",
-        "ShadUI",
-        "Tailwind CSS",
-        "tRPC",
-        "TypeScript",
-      ],
-    },
-    {
-      id: nanoid(),
-      name: "Boilerchain",
-      filename: "boilerchain.svg",
-      github: "https://github.com/kambhani/boilerchain",
-      preview: "https://boilerchain.us/",
-      description:
-        "Boilerchain is a web app I created during the Boilermake XI hackathon that allows users to mine and transfer a cryptocurrency called Boilercoin. Despite having no prior experience with the backend technologies involved, I successfully built a functioning blockchain and integrated it into the app within 36 hours. The project taught me a lot about the theory behind cryptocurrencies and the challenges of developing a production-level application under time constraints. After the hackathon was over, I deployed the app to the web with Vercel.",
-      technologies: [
-        "AWS Amplify",
-        "Bruno",
-        "Chakra UI",
-        "Docker",
-        "FastAPI",
-        "React",
-        "Redis",
-        "TypeScript",
-      ],
     },
   ];
 
@@ -190,6 +252,7 @@ export default function Projects() {
                             <Button
                               className="bg-background font-semibold"
                               href={project.github}
+                              target="_blank"
                               as={Link}
                               endContent={<GithubLogo size={16} />}
                               size="sm"
@@ -202,6 +265,7 @@ export default function Projects() {
                             <Button
                               className="bg-foreground text-background"
                               href={project.preview}
+                              target="_blank"
                               as={Link}
                               endContent={<ArrowSquareOut />}
                               size="sm"

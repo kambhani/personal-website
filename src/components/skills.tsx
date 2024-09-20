@@ -39,9 +39,9 @@ export default function Skills() {
       {
         name: "Scripting",
         children: [
-          { name: "discord.js", level: 7 },
+          { name: "discord.js", level: 10 },
           { name: "lxml", level: 2 },
-          { name: "Python", level: 5 },
+          { name: "Python", level: 9 },
         ],
       },
       {
@@ -81,7 +81,7 @@ export default function Skills() {
       {
         name: "Operating Systems",
         children: [
-          { name: "Linux", level: 4 },
+          { name: "Linux", level: 7 },
           { name: "MacOS", level: 5 },
           { name: "Windows", level: 4 },
           { name: "Windows Subsystem for Linux", level: 4 },
@@ -90,11 +90,11 @@ export default function Skills() {
       {
         name: "Databases",
         children: [
-          { name: "MongoDB", level: 7 },
-          { name: "SQL", level: 5 },
-          { name: "SQLite", level: 3 },
-          { name: "Postgres", level: 4 },
-          { name: "Redis", level: 2 },
+          { name: "MongoDB", level: 5 },
+          { name: "SQL", level: 9 },
+          { name: "SQLite", level: 5 },
+          { name: "Postgres", level: 6 },
+          { name: "Redis", level: 3 },
         ],
       },
     ],

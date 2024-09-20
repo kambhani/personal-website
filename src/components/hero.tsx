@@ -63,6 +63,7 @@ export default function Hero() {
               variant="solid"
               className="flex h-14 w-14 items-center justify-center shadow-xl"
               href="https://www.linkedin.com/in/anishkambhampati/"
+              target="_blank"
             >
               <LinkedinLogo size={44} />
             </Button>
@@ -72,6 +73,7 @@ export default function Hero() {
               variant="solid"
               className="flex h-14 w-14 items-center justify-center shadow-xl"
               href="https://github.com/kambhani/"
+              target="_blank"
             >
               <GithubLogo size={44} />
             </Button>
@@ -81,6 +83,7 @@ export default function Hero() {
               variant="solid"
               className="flex h-14 w-14 items-center justify-center shadow-xl"
               href="mailto: kraghuranish@gmail.com"
+              target="_blank"
             >
               <EnvelopeSimple size={44} />
             </Button>
@@ -90,6 +93,7 @@ export default function Hero() {
               variant="solid"
               className="flex h-14 w-14 items-center justify-center shadow-xl"
               href="/resume.pdf"
+              target="_blank"
             >
               <File size={44} />
             </Button>
@@ -97,7 +101,7 @@ export default function Hero() {
           <h1 className="mx-auto w-4/5 rounded-2xl bg-background p-2 text-center font-mono text-2xl sm:w-2/3 sm:text-3xl">
             <TypeAnimation
               sequence={[
-                "Hi! I'm Anish Kambhampati, a computer science student at Purdue University passionate about secure, cloud-based web application development.",
+                "Hi! I'm Anish Kambhampati, a computer science student at Purdue University passionate about all things technology.",
               ]}
             />
           </h1>

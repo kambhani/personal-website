@@ -41,24 +41,28 @@ export default function Footer() {
           <Link
             className="flex items-center justify-end text-foreground"
             href="https://www.linkedin.com/in/anishkambhampati/"
+            target="_blank"
           >
             <LinkedinLogo size={48} />
           </Link>
           <Link
             className="flex items-center justify-end text-foreground"
             href="https://github.com/kambhani/"
+            target="_blank"
           >
             <GithubLogo size={48} />
           </Link>
           <Link
             className="flex items-center justify-end text-foreground"
             href="mailto: kraghuranish@gmail.com"
+            target="_blank"
           >
             <EnvelopeSimple size={48} />
           </Link>
           <Link
             className="flex items-center justify-end text-foreground"
             href="/resume.pdf"
+            target="_blank"
           >
             <File size={48} />
           </Link>
@@ -66,7 +70,11 @@ export default function Footer() {
         <div className="col-span-12 mt-20 text-center font-mono text-sm lg:mt-8">
           <h3>
             A{" "}
-            <Link size="sm" href="https://github.com/kambhani/personal-website">
+            <Link
+              size="sm"
+              href="https://github.com/kambhani/personal-website"
+              target="_blank"
+            >
               free and open-source
             </Link>{" "}
             creation, licensed MIT

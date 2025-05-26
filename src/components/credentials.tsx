@@ -112,6 +112,34 @@ export default function Credentials() {
   // Photos widths are 1.5x photo heights
   const awardData = [
     {
+      date: "January 2023",
+      image: "best_use_of_velo.jpeg",
+      issuer: "BoilerMake X",
+      issuerLogo: "boilermake_x.png",
+      name: "Hackathon Win — Best Use of Velo by Wix",
+    },
+    {
+      date: "January 2024",
+      image: "best_fintech_hack.jpeg",
+      issuer: "BoilerMake XI",
+      issuerLogo: "boilermake_xi.png",
+      name: "Hackathon Win — Best Fintech Hack",
+    },
+    {
+      date: "September 2024",
+      image: "levelsfyi_first.jpeg",
+      issuer: "Levels.fyi",
+      issuerLogo: "levelsfyi.jpeg",
+      name: "2024 Levels.fyi Hackathon — First Place",
+    },
+    {
+      date: "April 2025",
+      image: "uiuc_trading_first.jpeg",
+      issuer: "Quant @ Illinois",
+      issuerLogo: "quant_at_illinois.jpeg",
+      name: "2025 Quant @ Illinois Trading Competition — First Place",
+    },
+    {
       date: "April 2025",
       image: "cs_awards_banquet.jpeg",
       issuer: "Department of Computer Science, Purdue University",
@@ -174,23 +202,23 @@ export default function Credentials() {
         </div>
         <div className="h-72 sm:h-96"></div>
         <div className="mx-auto mt-24 flex max-w-fit flex-row">
-          <Parallax className="flex-none p-2 sm:p-4" translateX={[0, -100]}>
+          <Parallax className="flex-none p-2 sm:p-4" translateX={[0, -20]}>
             <h2 className="mt-48 text-end text-4xl sm:text-[4rem] md:text-[5rem] lg:text-[6rem] xl:text-[8rem]">
               AND
             </h2>
           </Parallax>
-          <Parallax className="flex-none p-2 sm:p-4" translateX={[0, 100]}>
+          <Parallax className="flex-none p-2 sm:p-4" translateX={[0, 20]}>
             <h2 className="mt-48 text-start text-4xl sm:text-[4rem] md:text-[5rem] lg:text-[6rem] xl:text-[8rem]">
               AWARDS
             </h2>
           </Parallax>
         </div>
-        <div className="mt-44 max-w-full sm:mt-48 md:mt-52 lg:mt-60 xl:mt-72">
+        <div className="mt-44 max-w-full sm:mt-48 md:mt-56 lg:mt-72 xl:mt-80">
           <Carousel
             slides={awardSlides}
             showNavigation={false}
             goToSlide={awardSlideIndex}
-            animationConfig={{ tension: 210, friction: 20 }}
+            animationConfig={{ tension: 210, friction: 50 }}
           />
         </div>
       </Parallax>
@@ -273,7 +301,8 @@ const AwardCard = ({
 }) => {
   return (
     <Card
-      className="w-72 bg-rose-100 dark:bg-rose-900 sm:w-96 sm:max-w-lg md:w-[40em]"
+      className="w-72 bg-secondary/20 dark:bg-secondary/70 sm:w-96 md:w-[32em] lg:w-[40em]"
+      isPressable
       onPress={() => setSlideIndex(index)}
     >
       <CardBody className="relative overflow-visible p-0">
@@ -285,9 +314,13 @@ const AwardCard = ({
           src={`/awards/${award.image}`}
           width="100%"
         />
-        <div className="absolute right-2 top-2 z-10 rounded bg-black/70 px-2 py-1 text-xs text-white">
-          Featured
-        </div>
+        <Chip
+          color="secondary"
+          variant="solid"
+          className="absolute right-2 top-2 z-10"
+        >
+          {award.date}
+        </Chip>
       </CardBody>
       <CardFooter>
         <div className="my-1 flex items-center gap-2">
@@ -300,9 +333,9 @@ const AwardCard = ({
             />
           </div>
 
-          <div className="flex flex-col">
-            <p className="font-semibold">{award.name}</p>
-            <p className="text-tiny">{award.issuer}</p>
+          <div className="flex flex-col items-start">
+            <p className="text-left font-semibold">{award.name}</p>
+            <p className="text-left text-small">{award.issuer}</p>
           </div>
         </div>
       </CardFooter>

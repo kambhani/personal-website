@@ -4,6 +4,14 @@ import { Parallax } from "react-scroll-parallax";
 export default function Experience() {
   const comapny_info = [
     {
+      name: "Akuna Capital",
+      logo: "akuna_capital.jpeg",
+      time: "June 2025 — August 2025",
+      position: "Quantitative Development Intern",
+      description:
+        "My fifth internship is at Akuna Capital. I'm super excited for this!",
+    },
+    {
       name: "Elevance Health",
       logo: "elevance_health.jpeg",
       time: "May 2024 — August 2024",

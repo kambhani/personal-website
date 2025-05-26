@@ -100,6 +100,52 @@ export default function Education() {
       altText: "A photo of some friends and I in the stands at Mackey arena.",
       footer: "Supporting the Purdue basketball team",
     },
+    {
+      filename: "2024-12-12.jpeg",
+      width: 2316,
+      height: 3088,
+      altText:
+        "A selfie of my friend and I directly in front of a window. Behind the window is a snowy West Lafayette.",
+      footer: "My friend Rajit and I",
+    },
+    {
+      filename: "2025-01-07.jpeg",
+      width: 4032,
+      height: 3024,
+      altText:
+        "A photo of some friends and I in front of the Topgolf building located in Fishers, Indiana.",
+      footer: "A trip to Topgolf",
+    },
+    {
+      filename: "2025-02-13.jpeg",
+      width: 2048,
+      height: 1536,
+      altText: "A photo of some friends and I in front of a wall.",
+      footer: "My friend's 21st",
+    },
+    {
+      filename: "2025-02-23.jpeg",
+      width: 4284,
+      height: 5712,
+      altText: "A photo of me and a puppy beside a couch.",
+      footer: "Puppy!!!",
+    },
+    {
+      filename: "2025-03-16.jpeg",
+      width: 4032,
+      height: 3024,
+      altText:
+        "A photo of some competitors and I at the 2025 UMich trading competition.",
+      footer: "2025 UMich Trading Competition",
+    },
+    {
+      filename: "2025-04-08.jpeg",
+      width: 3024,
+      height: 4032,
+      altText:
+        "A selfie of me atop the Duquesne Incline. Behind me is the nighttime Pittsburgh skyline.",
+      footer: "Nighttime Pittsburgh skyline",
+    },
   ];
   const images = data.map((photo) => ({
     src: `/purdue/${photo.filename}`,
@@ -172,16 +218,41 @@ export default function Education() {
     {
       name: "Artificial Intelligence",
       code: "CS 57100",
-      grade: "WIP",
+      grade: "A+",
     },
     {
       name: "Database Systems",
       code: "CS 54100",
-      grade: "WIP",
+      grade: "A+",
     },
     {
       name: "Numerical Methods",
       code: "CS 31400",
+      grade: "A+",
+    },
+    {
+      name: "Compiling And Programming Systems",
+      code: "CS 50200",
+      grade: "A-",
+    },
+    {
+      name: "Introduction to Probability",
+      code: "STAT 51900",
+      grade: "A+",
+    },
+    {
+      name: "Data Communication And Computer Networks",
+      code: "CS 53600",
+      grade: "WIP",
+    },
+    {
+      name: "Statistical Machine Learning",
+      code: "CS 57800",
+      grade: "WIP",
+    },
+    {
+      name: "Randomized Algorithms",
+      code: "CS 5800",
       grade: "WIP",
     },
   ];
@@ -211,9 +282,9 @@ export default function Education() {
         </div>
         <div className="h-[25vh]"></div>
         <h3 className="mx-auto mb-12 w-4/5 text-2xl font-light md:text-4xl xl:text-5xl">
-          I'm currently a third-year student pursuing a combined BS/MS degree in
-          computer science. I've taken a variety of challenging coursework, and
-          I have a 4.0 GPA to show for it.
+          I'm a student at Purdue University, currently pursuing my MS in
+          computer science. I recently graduated with my BS in computer science
+          from Purdue with honors and with highest distinction.
         </h3>
         <div className="w-full overflow-hidden">
           <div className="mx-auto mb-72 grid w-11/12 grid-cols-12 gap-4">

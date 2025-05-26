@@ -13,9 +13,10 @@ import { SetStateAction, useState } from "react";
 import type { Dispatch } from "react";
 
 export default function Credentials() {
-  const [slideIndex, setSlideIndex] = useState(0);
+  const [certSlideIndex, setCertSlideIndex] = useState(0);
+  const [awardSlideIndex, setAwardSlideIndex] = useState(0);
 
-  const data = [
+  const certData = [
     {
       company: "Microsoft",
       name: "Microsoft Certified: Azure Fundamentals",
@@ -108,15 +109,39 @@ export default function Credentials() {
     },
   ];
 
-  const slides = data.map((cert, index) => {
+  // Photos widths are 1.5x photo heights
+  const awardData = [
+    {
+      date: "April 2025",
+      image: "cs_awards_banquet.jpeg",
+      issuer: "Department of Computer Science, Purdue University",
+      issuerLogo: "purdue_university.jpeg",
+      name: "Outstanding Senior in Computer Science",
+    },
+  ];
+
+  const certSlides = certData.map((cert, index) => {
     return {
       key: nanoid(),
       content: (
         <CertificationCard
           cert={cert}
           index={index}
-          slideIndex={slideIndex}
-          setSlideIndex={setSlideIndex}
+          slideIndex={certSlideIndex}
+          setSlideIndex={setCertSlideIndex}
+        />
+      ),
+    };
+  });
+
+  const awardSlides = awardData.map((award, index) => {
+    return {
+      key: nanoid(),
+      content: (
+        <AwardCard
+          award={award}
+          index={index}
+          setSlideIndex={setAwardSlideIndex}
         />
       ),
     };
@@ -141,13 +166,33 @@ export default function Credentials() {
 
         <div className="mt-52 max-w-full xs:mt-20 sm:mt-0">
           <Carousel
-            slides={slides}
+            slides={certSlides}
             showNavigation={false}
-            goToSlide={slideIndex}
+            goToSlide={certSlideIndex}
             animationConfig={{ tension: 210, friction: 20 }}
           />
         </div>
-        <div className="h-96"></div>
+        <div className="h-72 sm:h-96"></div>
+        <div className="mx-auto mt-24 flex max-w-fit flex-row">
+          <Parallax className="flex-none p-2 sm:p-4" translateX={[0, -100]}>
+            <h2 className="mt-48 text-end text-4xl sm:text-[4rem] md:text-[5rem] lg:text-[6rem] xl:text-[8rem]">
+              AND
+            </h2>
+          </Parallax>
+          <Parallax className="flex-none p-2 sm:p-4" translateX={[0, 100]}>
+            <h2 className="mt-48 text-start text-4xl sm:text-[4rem] md:text-[5rem] lg:text-[6rem] xl:text-[8rem]">
+              AWARDS
+            </h2>
+          </Parallax>
+        </div>
+        <div className="mt-44 max-w-full sm:mt-48 md:mt-52 xl:mt-60">
+          <Carousel
+            slides={awardSlides}
+            showNavigation={false}
+            goToSlide={awardSlideIndex}
+            animationConfig={{ tension: 210, friction: 20 }}
+          />
+        </div>
       </Parallax>
     </div>
   );
@@ -206,6 +251,57 @@ const CertificationCard = ({
             {skill}
           </Chip>
         ))}
+      </CardFooter>
+    </Card>
+  );
+};
+
+const AwardCard = ({
+  award,
+  index,
+  setSlideIndex,
+}: {
+  award: {
+    date: string;
+    image: string;
+    issuer: string;
+    issuerLogo: string;
+    name: string;
+  };
+  index: number;
+  setSlideIndex: Dispatch<SetStateAction<number>>;
+}) => {
+  return (
+    <Card
+      className="w-72 bg-rose-100 sm:w-96 sm:max-w-lg dark:bg-rose-900"
+      onPress={() => setSlideIndex(index)}
+    >
+      <CardBody className="overflow-visible p-0">
+        <Image
+          alt={award.name}
+          className="w-full object-cover"
+          radius="none"
+          shadow="none"
+          src={`/awards/${award.image}`}
+          width="100%"
+        />
+      </CardBody>
+      <CardFooter>
+        <div className="my-1 flex items-center gap-2">
+          <div className="shrink-0">
+            <Image
+              alt={`${award.issuer} logo`}
+              className="size-11"
+              radius="lg"
+              src={`/company_logos/${award.issuerLogo}`}
+            />
+          </div>
+
+          <div className="flex flex-col">
+            <p className="font-semibold">{award.name}</p>
+            <p className="text-tiny">{award.issuer}</p>
+          </div>
+        </div>
       </CardFooter>
     </Card>
   );

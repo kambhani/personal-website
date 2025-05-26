@@ -7,7 +7,7 @@ import {
   CardFooter,
   Image,
   Chip,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import Carousel from "react-spring-3d-carousel";
 import { SetStateAction, useState } from "react";
 import type { Dispatch } from "react";
@@ -185,7 +185,7 @@ export default function Credentials() {
             </h2>
           </Parallax>
         </div>
-        <div className="mt-44 max-w-full sm:mt-48 md:mt-52 xl:mt-60">
+        <div className="mt-44 max-w-full sm:mt-48 md:mt-52 lg:mt-60 xl:mt-72">
           <Carousel
             slides={awardSlides}
             showNavigation={false}
@@ -218,7 +218,7 @@ const CertificationCard = ({
 }) => {
   return (
     <Card
-      className="w-72 bg-gradient-to-br from-slate-100 to-slate-50 px-1 pt-1 sm:w-96 dark:from-slate-900 dark:to-slate-950"
+      className="w-72 bg-gradient-to-br from-slate-100 to-slate-50 px-1 pt-1 dark:from-slate-900 dark:to-slate-950 sm:w-96"
       isPressable
       onPress={() =>
         slideIndex === index
@@ -273,10 +273,10 @@ const AwardCard = ({
 }) => {
   return (
     <Card
-      className="w-72 bg-rose-100 sm:w-96 sm:max-w-lg dark:bg-rose-900"
+      className="w-72 bg-rose-100 dark:bg-rose-900 sm:w-96 sm:max-w-lg md:w-[40em]"
       onPress={() => setSlideIndex(index)}
     >
-      <CardBody className="overflow-visible p-0">
+      <CardBody className="relative overflow-visible p-0">
         <Image
           alt={award.name}
           className="w-full object-cover"
@@ -285,6 +285,9 @@ const AwardCard = ({
           src={`/awards/${award.image}`}
           width="100%"
         />
+        <div className="absolute right-2 top-2 z-10 rounded bg-black/70 px-2 py-1 text-xs text-white">
+          Featured
+        </div>
       </CardBody>
       <CardFooter>
         <div className="my-1 flex items-center gap-2">

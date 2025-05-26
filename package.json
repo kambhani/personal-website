@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@nextui-org/react": "^2.2.9",
+    "@heroui/react": "2.7.8",
     "@nivo/core": "^0.84.0",
     "@nivo/line": "^0.84.0",
     "@nivo/treemap": "^0.84.0",

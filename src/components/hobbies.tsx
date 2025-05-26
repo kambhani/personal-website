@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Parallax } from "react-scroll-parallax";
 import { ResponsiveLine } from "@nivo/line";
-import { Link } from "@nextui-org/react";
+import { Link } from "@heroui/react";
 import type { cfUserRating } from "../cf_data";
 import { cfData } from "../cf_data";
 import useDarkMode from "use-dark-mode";

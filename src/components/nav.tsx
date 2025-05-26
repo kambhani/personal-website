@@ -13,7 +13,7 @@ import {
   DropdownMenu,
   Link,
   Button,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import {
   GraduationCap,
   CaretDown,

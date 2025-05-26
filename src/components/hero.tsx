@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import useDarkMode from "use-dark-mode";
-import { Image, Link, Button } from "@nextui-org/react";
+import { Image, Link, Button } from "@heroui/react";
 import { Parallax } from "react-scroll-parallax";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import type { Engine } from "@tsparticles/engine";

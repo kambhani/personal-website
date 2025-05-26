@@ -8,7 +8,7 @@ import {
   Link,
   Chip,
   Image,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import { GithubLogo, ArrowSquareOut } from "@phosphor-icons/react";
 import Tilt from "react-parallax-tilt";
 import { nanoid } from "nanoid";

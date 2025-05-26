@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Card, CardHeader } from "@nextui-org/react";
+import { Card, CardHeader } from "@heroui/react";
 import { MathOperations } from "@phosphor-icons/react";
 import { Parallax } from "react-scroll-parallax";
 import PhotoAlbum from "react-photo-album";

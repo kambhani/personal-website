@@ -1,4 +1,4 @@
-import { Image, Divider } from "@nextui-org/react";
+import { Image, Divider } from "@heroui/react";
 import { Parallax } from "react-scroll-parallax";
 
 export default function Experience() {

@@ -15,17 +15,19 @@ import {
   Button,
 } from "@heroui/react";
 import {
-  GraduationCap,
-  CaretDown,
-  Certificate,
-  SuitcaseSimple,
-  Laptop,
-  ListChecks,
-  Rocket,
-  Buildings,
-  House,
-  Sun,
-  Moon,
+  GraduationCapIcon,
+  CaretDownIcon,
+  CertificateIcon,
+  SuitcaseSimpleIcon,
+  FlaskIcon,
+  LaptopIcon,
+  LightbulbFilamentIcon,
+  ListChecksIcon,
+  RocketIcon,
+  BuildingsIcon,
+  HouseIcon,
+  SunIcon,
+  MoonIcon,
 } from "@phosphor-icons/react";
 import useDarkMode from "use-dark-mode";
 
@@ -39,31 +41,35 @@ export default function Nav() {
   const menuItems = [
     {
       name: "Home",
-      icon: <House className="mr-2 text-blue-700" size={20} />,
+      icon: <HouseIcon className="mr-2 text-blue-700" size={20} />,
     },
     {
       name: "Education",
-      icon: <GraduationCap className="mr-2 text-fuchsia-700" size={20} />,
+      icon: <GraduationCapIcon className="mr-2 text-fuchsia-700" size={20} />,
     },
     {
       name: "Experience",
-      icon: <SuitcaseSimple className="mr-2 text-amber-700" size={20} />,
+      icon: <SuitcaseSimpleIcon className="mr-2 text-amber-700" size={20} />,
     },
     {
       name: "Certifications",
-      icon: <Certificate className="mr-2 text-sky-600" size={20} />,
+      icon: <CertificateIcon className="mr-2 text-sky-600" size={20} />,
+    },
+    {
+      name: "Research",
+      icon: <FlaskIcon className="mr-2 text-lime-500" size={20} />,
     },
     {
       name: "Projects",
-      icon: <Laptop className="mr-2 text-violet-500" size={20} />,
+      icon: <LaptopIcon className="mr-2 text-rose-500" size={20} />,
     },
     {
       name: "Skills",
-      icon: <ListChecks className="mr-2 text-emerald-500" size={20} />,
+      icon: <ListChecksIcon className="mr-2 text-emerald-500" size={20} />,
     },
     {
       name: "Hobbies",
-      icon: <Rocket className="mr-2 text-orange-600" size={20} />,
+      icon: <RocketIcon className="mr-2 text-orange-600" size={20} />,
     },
   ];
 
@@ -99,7 +105,7 @@ export default function Nav() {
             color="foreground"
             href="#education"
           >
-            <GraduationCap className="mr-1 text-fuchsia-500" size={20} />
+            <GraduationCapIcon className="mr-1 text-fuchsia-500" size={20} />
             Education
           </Link>
         </NavbarItem>
@@ -109,11 +115,11 @@ export default function Nav() {
               <Button
                 disableRipple
                 className="bg-transparent p-0 text-base data-[hover=true]:bg-transparent"
-                endContent={<CaretDown size={20} />}
+                endContent={<CaretDownIcon size={20} />}
                 radius="sm"
                 variant="light"
               >
-                <Buildings className="text-slate-400" size={20} />
+                <BuildingsIcon className="text-slate-400" size={20} />
                 Credentials
               </Button>
             </DropdownTrigger>
@@ -129,7 +135,7 @@ export default function Nav() {
               key="experience"
               href="#experience"
               startContent={
-                <SuitcaseSimple className="text-amber-700" size={24} />
+                <SuitcaseSimpleIcon className="text-amber-700" size={24} />
               }
             >
               Experience
@@ -137,9 +143,49 @@ export default function Nav() {
             <DropdownItem
               key="certifications"
               href="#certifications"
-              startContent={<Certificate className="text-sky-600" size={24} />}
+              startContent={
+                <CertificateIcon className="text-sky-600" size={24} />
+              }
             >
               Certifications
+            </DropdownItem>
+          </DropdownMenu>
+        </Dropdown>
+        <Dropdown>
+          <NavbarItem>
+            <DropdownTrigger>
+              <Button
+                disableRipple
+                className="bg-transparent p-0 text-base data-[hover=true]:bg-transparent"
+                endContent={<CaretDownIcon size={24} />}
+                radius="sm"
+                variant="light"
+              >
+                <LightbulbFilamentIcon className="text-purple-500" size={20} />
+                Ideas
+              </Button>
+            </DropdownTrigger>
+          </NavbarItem>
+          <DropdownMenu
+            aria-label="Professional credentials"
+            className="w-40"
+            itemClasses={{
+              base: "gap-4",
+            }}
+          >
+            <DropdownItem
+              key="experience"
+              href="#research"
+              startContent={<FlaskIcon className="text-lime-500" size={24} />}
+            >
+              Research
+            </DropdownItem>
+            <DropdownItem
+              key="certifications"
+              href="#projects"
+              startContent={<LaptopIcon className="text-rose-500" size={24} />}
+            >
+              Projects
             </DropdownItem>
           </DropdownMenu>
         </Dropdown>
@@ -147,19 +193,9 @@ export default function Nav() {
           <Link
             className="inline-flex align-top"
             color="foreground"
-            href="#projects"
-          >
-            <Laptop className="mr-1 text-violet-500" size={20} />
-            Projects
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link
-            className="inline-flex align-top"
-            color="foreground"
             href="#skills"
           >
-            <ListChecks className="mr-1 text-emerald-500" size={20} />
+            <ListChecksIcon className="mr-1 text-emerald-500" size={24} />
             Skills
           </Link>
         </NavbarItem>
@@ -169,7 +205,7 @@ export default function Nav() {
             color="foreground"
             href="#hobbies"
           >
-            <Rocket className="mr-1 text-orange-600" size={20} />
+            <RocketIcon className="mr-1 text-orange-600" size={20} />
             Hobbies
           </Link>
         </NavbarItem>
@@ -182,7 +218,7 @@ export default function Nav() {
             variant="light"
             onClick={() => darkMode.toggle()}
           >
-            {darkMode.value ? <Sun size={20} /> : <Moon size={20} />}
+            {darkMode.value ? <SunIcon size={20} /> : <MoonIcon size={20} />}
           </Button>
         </NavbarItem>
       </NavbarContent>

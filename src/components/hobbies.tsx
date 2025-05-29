@@ -186,7 +186,7 @@ export default function Hobbies() {
                   tickSize: 5,
                   tickPadding: 5,
                   tickRotation: -45,
-                  tickValues: "every month",
+                  tickValues: "every 3 months",
                   legend: "Date",
                   legendOffset: 72,
                   legendPosition: "middle",
@@ -268,7 +268,7 @@ export default function Hobbies() {
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
             <h3 className="mb-6 text-5xl sm:text-5xl md:text-[4rem] lg:mb-6 lg:text-[5rem]">
-              Working Out
+              Staying Active
             </h3>
           </ScrollAnimation>
           <ScrollAnimation

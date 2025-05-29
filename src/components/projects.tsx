@@ -9,7 +9,7 @@ import {
   Chip,
   Image,
 } from "@heroui/react";
-import { GithubLogo, ArrowSquareOut } from "@phosphor-icons/react";
+import { GithubLogoIcon, ArrowSquareOutIcon } from "@phosphor-icons/react";
 import Tilt from "react-parallax-tilt";
 import { nanoid } from "nanoid";
 
@@ -224,12 +224,12 @@ export default function Projects() {
         <h2 className="mx-auto mb-16 max-w-[95%] animate-text bg-[linear-gradient(-225deg,_#881337_0%,#f97316_30%,_#dc2626_70%,_#fef08a_100%)] bg-[200%_auto] bg-clip-text text-center text-6xl leading-[3.75rem] text-transparent sm:mb-24 sm:max-w-[90%] sm:text-[4rem] sm:leading-[4rem] md:text-[5rem] md:leading-[5rem] lg:text-[6rem] lg:leading-[6rem] xl:mb-36 xl:text-[9rem] xl:leading-[9rem]">
           MY PROJECTS
         </h2>
-        <div className=" mb-20 w-full">
+        <div className="mb-20 w-full">
           <div className="mx-auto grid w-11/12 grid-cols-12 gap-4">
             {projects.map((project) => (
               <Tilt
                 key={project.id}
-                className="relative col-span-12 rounded-2xl bg-sky-200 md:col-span-6 xl:col-span-4 dark:bg-sky-950"
+                className="relative col-span-12 rounded-2xl bg-sky-200 dark:bg-sky-950 md:col-span-6 xl:col-span-4"
               >
                 <Card className="h-full bg-sky-200 p-1 dark:bg-sky-950">
                   <CardHeader className="justify-between">
@@ -254,7 +254,7 @@ export default function Projects() {
                               href={project.github}
                               target="_blank"
                               as={Link}
-                              endContent={<GithubLogo size={16} />}
+                              endContent={<GithubLogoIcon size={16} />}
                               size="sm"
                               color="default"
                             >
@@ -267,7 +267,7 @@ export default function Projects() {
                               href={project.preview}
                               target="_blank"
                               as={Link}
-                              endContent={<ArrowSquareOut />}
+                              endContent={<ArrowSquareOutIcon />}
                               size="sm"
                               color="default"
                             >

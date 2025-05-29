@@ -197,23 +197,23 @@ export default function Credentials() {
             slides={certSlides}
             showNavigation={false}
             goToSlide={certSlideIndex}
-            animationConfig={{ tension: 210, friction: 20 }}
+            animationConfig={{ tension: 210, friction: 50 }}
           />
         </div>
         <div className="h-72 sm:h-96"></div>
         <div className="mx-auto mt-24 flex max-w-fit flex-row">
-          <Parallax className="flex-none p-2 sm:p-4" translateX={[0, -20]}>
+          <Parallax className="flex-none p-2 sm:p-4" translateX={[0, -30]}>
             <h2 className="mt-48 text-end text-4xl sm:text-[4rem] md:text-[5rem] lg:text-[6rem] xl:text-[8rem]">
               AND
             </h2>
           </Parallax>
-          <Parallax className="flex-none p-2 sm:p-4" translateX={[0, 20]}>
+          <Parallax className="flex-none p-2 sm:p-4" translateX={[0, 30]}>
             <h2 className="mt-48 text-start text-4xl sm:text-[4rem] md:text-[5rem] lg:text-[6rem] xl:text-[8rem]">
               AWARDS
             </h2>
           </Parallax>
         </div>
-        <div className="mt-44 max-w-full sm:mt-48 md:mt-56 lg:mt-72 xl:mt-80">
+        <div className="mb-48 mt-44 max-w-full sm:mt-48 md:mt-56 lg:mt-72 xl:mt-80">
           <Carousel
             slides={awardSlides}
             showNavigation={false}

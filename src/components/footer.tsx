@@ -1,14 +1,14 @@
 import { Link } from "@heroui/react";
 import {
-  LinkedinLogo,
-  GithubLogo,
-  EnvelopeSimple,
-  File,
+  LinkedinLogoIcon,
+  GithubLogoIcon,
+  EnvelopeSimpleIcon,
+  FileIcon,
 } from "@phosphor-icons/react";
 
 export default function Footer() {
   return (
-    <div className="w-full bg-foreground-200 px-4 pb-4 pt-32 sm:pt-24 dark:bg-foreground-50">
+    <div className="w-full bg-foreground-200 px-4 pb-4 pt-32 dark:bg-foreground-50 sm:pt-24">
       <div className="mx-auto grid w-11/12 grid-cols-12 sm:w-11/12">
         <div className="col-span-12 sm:col-span-6 lg:col-span-5">
           <p
@@ -43,28 +43,28 @@ export default function Footer() {
             href="https://www.linkedin.com/in/anishkambhampati/"
             target="_blank"
           >
-            <LinkedinLogo size={48} />
+            <LinkedinLogoIcon size={48} />
           </Link>
           <Link
             className="flex items-center justify-end text-foreground"
             href="https://github.com/kambhani/"
             target="_blank"
           >
-            <GithubLogo size={48} />
+            <GithubLogoIcon size={48} />
           </Link>
           <Link
             className="flex items-center justify-end text-foreground"
             href="mailto: kraghuranish@gmail.com"
             target="_blank"
           >
-            <EnvelopeSimple size={48} />
+            <EnvelopeSimpleIcon size={48} />
           </Link>
           <Link
             className="flex items-center justify-end text-foreground"
             href="/resume.pdf"
             target="_blank"
           >
-            <File size={48} />
+            <FileIcon size={48} />
           </Link>
         </div>
         <div className="col-span-12 mt-20 text-center font-mono text-sm lg:mt-8">

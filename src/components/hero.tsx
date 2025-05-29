@@ -7,10 +7,10 @@ import type { Engine } from "@tsparticles/engine";
 import { loadSeaAnemonePreset } from "@tsparticles/preset-sea-anemone";
 import { loadFountainPreset } from "@tsparticles/preset-fountain";
 import {
-  LinkedinLogo,
-  GithubLogo,
-  EnvelopeSimple,
-  File,
+  LinkedinLogoIcon,
+  GithubLogoIcon,
+  EnvelopeSimpleIcon,
+  FileIcon,
 } from "@phosphor-icons/react";
 import { TypeAnimation } from "react-type-animation";
 
@@ -65,7 +65,7 @@ export default function Hero() {
               href="https://www.linkedin.com/in/anishkambhampati/"
               target="_blank"
             >
-              <LinkedinLogo size={44} />
+              <LinkedinLogoIcon size={44} />
             </Button>
             <Button
               as={Link}
@@ -75,7 +75,7 @@ export default function Hero() {
               href="https://github.com/kambhani/"
               target="_blank"
             >
-              <GithubLogo size={44} />
+              <GithubLogoIcon size={44} />
             </Button>
             <Button
               as={Link}
@@ -85,7 +85,7 @@ export default function Hero() {
               href="mailto: kraghuranish@gmail.com"
               target="_blank"
             >
-              <EnvelopeSimple size={44} />
+              <EnvelopeSimpleIcon size={44} />
             </Button>
             <Button
               as={Link}
@@ -95,7 +95,7 @@ export default function Hero() {
               href="/resume.pdf"
               target="_blank"
             >
-              <File size={44} />
+              <FileIcon size={44} />
             </Button>
           </div>
           <h1 className="mx-auto w-4/5 rounded-2xl bg-background p-2 text-center font-mono text-2xl sm:w-2/3 sm:text-3xl">

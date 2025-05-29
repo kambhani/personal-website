@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Card, CardHeader } from "@heroui/react";
-import { MathOperations } from "@phosphor-icons/react";
+import { MathOperationsIcon } from "@phosphor-icons/react";
 import { Parallax } from "react-scroll-parallax";
 import PhotoAlbum from "react-photo-album";
 import Lightbox from "yet-another-react-lightbox";
@@ -297,7 +297,7 @@ export default function Education() {
               >
                 <Card className="h-full w-full p-1">
                   <CardHeader className="flex gap-3">
-                    <MathOperations size={40} />
+                    <MathOperationsIcon size={40} />
                     <div className="flex flex-col">
                       <p className="text-xl">{course.name}</p>
                       <p className="text-lg text-default-500">{course.code}</p>

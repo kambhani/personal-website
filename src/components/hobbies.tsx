@@ -68,7 +68,7 @@ export default function Hobbies() {
         <div>
           <ScrollAnimation
             animateIn="fadeInLeft"
-            delay={500}
+            delay={400}
             animateOnce={true}
           >
             {/* Image source: https://pixabay.com/vectors/violin-music-musical-instrument-156558/ */}
@@ -84,7 +84,7 @@ export default function Hobbies() {
           </ScrollAnimation>
           <ScrollAnimation
             animateIn="fadeInRight"
-            delay={250}
+            delay={200}
             animateOnce={true}
           >
             <p className="sm:text-lg lg:text-xl">
@@ -108,7 +108,7 @@ export default function Hobbies() {
         <div className="mx-auto w-11/12 md:w-full">
           <ScrollAnimation
             animateIn="fadeInRight"
-            delay={500}
+            delay={400}
             animateOnce={true}
           >
             {/* Image source: https://pixabay.com/vectors/anatomy-biology-brain-thought-mind-1751201/ */}
@@ -124,7 +124,7 @@ export default function Hobbies() {
           </ScrollAnimation>
           <ScrollAnimation
             animateIn="fadeInLeft"
-            delay={250}
+            delay={200}
             animateOnce={true}
           >
             <p className="sm:text-lg lg:text-xl">
@@ -214,7 +214,7 @@ export default function Hobbies() {
         <div>
           <ScrollAnimation
             animateIn="fadeInLeft"
-            delay={500}
+            delay={400}
             animateOnce={true}
           >
             {/* Image source: https://www.dropbox.com/sh/0mdu6zwzlkncu5a/AAAkreGuTFr1DgAsNIb88Lopa/Icons?preview=Clan_Wars_App_Icon_2020_App_Store_Format.png */}
@@ -230,7 +230,7 @@ export default function Hobbies() {
           </ScrollAnimation>
           <ScrollAnimation
             animateIn="fadeInRight"
-            delay={250}
+            delay={200}
             animateOnce={true}
           >
             <p className="sm:text-lg lg:text-xl">
@@ -252,12 +252,12 @@ export default function Hobbies() {
           </ScrollAnimation>
         </div>
       </div>
-      <div className="mx-auto mb-[75vh] gap-2 md:w-5/6 xl:w-3/4">
+      <div className="mx-auto mb-[50vh] gap-2 md:w-5/6 xl:w-3/4">
         <div className="mx-auto w-11/12 md:w-full">
           <ScrollAnimation
             className="fill-blue-500"
             animateIn="fadeInRight"
-            delay={500}
+            delay={400}
             animateOnce={true}
           >
             {/* Image source: https://pixabay.com/vectors/weight-sport-crossfit-training-1399281/ */}
@@ -273,19 +273,58 @@ export default function Hobbies() {
           </ScrollAnimation>
           <ScrollAnimation
             animateIn="fadeInLeft"
-            delay={250}
+            delay={200}
             animateOnce={true}
           >
             <p className="sm:text-lg lg:text-xl">
-              I've recently gotten into going to the gym and working out. Having
-              worked so hard to keep my mind in peak condition, I decided it was
-              time to do the same with the rest of my body. I don't do anything
-              fancy, just bench, pull-ups, and squats. Over time, I've noticed
-              my body becoming stronger, and that drives me to keep on going and
-              keep on getting those gains. I still try to be active outside the
-              gym, and you can often catch me playing sports like tennis with my
-              friends. We're not professionals at these sports by any means, but
-              it helps us stay active, and we always have a good time.
+              I'm a huge fan of getting out of the house and staying active.
+              Having worked so hard to keep my mind in peak condition, I decided
+              it was time to do the same with the rest of my body. I don't do
+              anything fancy, just bench, pull-ups, and squats. Over time, I've
+              noticed my body becoming stronger, and that drives me to keep on
+              going and keep on getting those gains. I still try to be active
+              outside the gym, and you can often catch me playing sports like
+              tennis and soccer with my friends. We're not professionals at
+              these sports by any means, but it helps us stay active, and we
+              always have a good time.
+            </p>
+          </ScrollAnimation>
+        </div>
+      </div>
+      <div className="mx-auto mb-[75vh] w-11/12 gap-2 md:w-5/6 xl:w-3/4">
+        <div>
+          <ScrollAnimation
+            animateIn="fadeInLeft"
+            delay={400}
+            animateOnce={true}
+          >
+            {/* Image source: https://pixabay.com/illustrations/playing-cards-card-game-hearts-7559877/ */}
+            <img
+              className="float-left h-40 pr-3 sm:h-52 sm:pr-4 md:h-60 xl:h-80 xl:pb-4 xl:pr-8"
+              src="/hobbies/royal_flush.png"
+            />
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeInRight" animateOnce={true}>
+            <h3 className="mb-6 text-5xl sm:text-6xl md:text-[4rem] lg:mb-6 lg:text-[5rem]">
+              Poker
+            </h3>
+          </ScrollAnimation>
+          <ScrollAnimation
+            animateIn="fadeInRight"
+            delay={200}
+            animateOnce={true}
+          >
+            <p className="sm:text-lg lg:text-xl">
+              I've recently gotten into playing poker, courtesy of Purdue's
+              quant club. I find the game fascinating and complex, just like
+              chess, a game which I used to play competitively in my youth. From
+              folding pre-flop to river showdowns, each phase of the game brings
+              its own set of concepts to understand. I wouldn't call myself a
+              good player but I'm always looking to improve. While I mainly play
+              no-limit hold 'em, I also play other variants like pot-limit
+              Omaha. My current goal is to study NLHE theory to become a winning
+              poker player. There's a whole world of information out there, and
+              I can't wait to explore it all!
             </p>
           </ScrollAnimation>
         </div>

@@ -9,7 +9,7 @@ export default function Experience() {
       time: "June 2025 — August 2025",
       position: "Quantitative Development Intern",
       description:
-        "My fifth internship is at Akuna Capital. I'm super excited for this!",
+        "My fifth internship was at Akuna Capital and was an excellent introduction to the quantitative finance industry. My work here involved trying to explain regressions in our quoting software by using large language models. I integrated magic-trace into our software testing application, processed that data with Databricks, and fed the stack trace data & source code into a multi-agent model to explain performance differences. This internship taught me how to design and execute a pipeline from start to finish, incorporating stakeholder feedback at every step of the way.",
     },
     {
       name: "Elevance Health",

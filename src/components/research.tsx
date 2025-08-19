@@ -56,7 +56,7 @@ export default function Research() {
     >
       <h2
         id="research"
-        className="mx-auto mt-24 w-11/12 text-center font-[fantasy] text-5xl font-extrabold xs:text-6xl sm:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[9rem]"
+        className="mx-auto mt-24 w-11/12 text-center font-[fantasy] text-3xl font-extrabold xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[8rem]"
       >
         MY RESEARCH
       </h2>

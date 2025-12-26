@@ -88,6 +88,7 @@ export default function Research() {
                       size="sm"
                       color="primary"
                       variant="solid"
+                      key={link.name}
                     >
                       {link.name}
                     </Button>

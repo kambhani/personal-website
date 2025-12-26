@@ -19,7 +19,6 @@ export default function Hobbies() {
   >([]);
 
   useEffect(() => {
-    // This is being blocked by CORS, so have to use fallback data
     fetch("https://codeforces.com/api/user.rating?handle=liquidplasma")
       .then((res) => res.json())
       .then((json: { status: string; result: cfUserRating[] }) => {
@@ -138,10 +137,8 @@ export default function Hobbies() {
               USACO to Kattis to Codeforces. I learned all sorts of concepts,
               from binary search to union-find to topological sorting. And
               through it all, I have come to appreciate the sheer complexity of
-              the field. I recently took a CP course at Purdue which I really
-              enjoyed, and I hope to take another soon. I've embedded a
-              visaulization of my Codeforces contest participations below. I
-              hope you find it as interesting as I did!
+              the field. I've embedded a visaulization of my Codeforces contest
+              participations below. I hope you find it as interesting as I did!
             </p>
           </ScrollAnimation>
         </div>
@@ -234,7 +231,7 @@ export default function Hobbies() {
             animateOnce={true}
           >
             <p className="sm:text-lg lg:text-xl">
-              I have played Clash Royale for over four years now, and in that
+              I have played Clash Royale for over six years now, and in that
               time, it has become my favorite video game. I've clinched
               nail-biting victories and choked winning games countless times,
               but through it all, I have come to appreciate what this game has
@@ -245,8 +242,8 @@ export default function Hobbies() {
               importantly, I have come to be a part of an amazing community. I
               am currently a Discord admin of a war-focused clan family server
               with 1000+ members, and the people I have met there have the game
-              all the more enjoyable. I foresee myself continuing to play the
-              game into the foreseeable future. And who knows, maybe I'll see
+              all the more enjoyable. I currently play the Merge Tactics game
+              mode, where I rank in the top 1k. And who knows, maybe I'll see
               you in the arena!
             </p>
           </ScrollAnimation>
@@ -278,15 +275,13 @@ export default function Hobbies() {
           >
             <p className="sm:text-lg lg:text-xl">
               I'm a huge fan of getting out of the house and staying active.
-              Having worked so hard to keep my mind in peak condition, I decided
-              it was time to do the same with the rest of my body. I don't do
-              anything fancy, just bench, pull-ups, and squats. Over time, I've
-              noticed my body becoming stronger, and that drives me to keep on
-              going and keep on getting those gains. I still try to be active
-              outside the gym, and you can often catch me playing sports like
-              tennis and soccer with my friends. We're not professionals at
-              these sports by any means, but it helps us stay active, and we
-              always have a good time.
+              Some of my favorite pasttimes include pickleball (I was the work
+              team champion during my internship at Akuna), going to the gym
+              (though admittedly not as frequently as I should), and practicing
+              on my new skateboard (I credit my brother for getting me hooked on
+              this). I also enjoy hiking which I mainly do on vacations. Since
+              I'm in front of screens for so much of the day, I figure the best
+              way to wind down is to stay off of them when I don't need one.
             </p>
           </ScrollAnimation>
         </div>
@@ -320,11 +315,8 @@ export default function Hobbies() {
               chess, a game which I used to play competitively in my youth. From
               folding pre-flop to river showdowns, each phase of the game brings
               its own set of concepts to understand. I wouldn't call myself a
-              good player but I'm always looking to improve. While I mainly play
-              no-limit hold 'em, I also play other variants like pot-limit
-              Omaha. My current goal is to study NLHE theory to become a winning
-              poker player. There's a whole world of information out there, and
-              I can't wait to explore it all!
+              good player but I'm always looking to improve. I'm always open to
+              joining a new game, and I will see you at showdown!
             </p>
           </ScrollAnimation>
         </div>

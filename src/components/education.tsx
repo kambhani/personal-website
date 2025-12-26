@@ -146,6 +146,30 @@ export default function Education() {
         "A selfie of me atop the Duquesne Incline. Behind me is the nighttime Pittsburgh skyline.",
       footer: "Nighttime Pittsburgh skyline",
     },
+    {
+      filename: "2025-09-21.jpeg",
+      width: 1280,
+      height: 960,
+      altText:
+        "A selfie of me, my brother, and a friend at the Hello World Hackathon.",
+      footer: "Hello World Hackathon",
+    },
+    {
+      filename: "2025-11-22.jpeg",
+      width: 960,
+      height: 1280,
+      altText:
+        "A photo of me and my food at Dos Amigos, a restaurant in West Lafayette.",
+      footer: "Midnight Dinner",
+    },
+    {
+      filename: "2025-12-02.jpeg",
+      width: 1280,
+      height: 960,
+      altText:
+        "My brother and I playing chess by a window with a view of the Chicago skyline.",
+      footer: "Chess with a View",
+    },
   ];
   const images = data.map((photo) => ({
     src: `/purdue/${photo.filename}`,
@@ -243,16 +267,31 @@ export default function Education() {
     {
       name: "Data Communication And Computer Networks",
       code: "CS 53600",
-      grade: "WIP",
+      grade: "A+",
     },
     {
       name: "Statistical Machine Learning",
       code: "CS 57800",
-      grade: "WIP",
+      grade: "A",
     },
     {
       name: "Randomized Algorithms",
       code: "CS 5800",
+      grade: "A",
+    },
+    {
+      name: "Parallel Computing",
+      code: "CS 52500",
+      grade: "WIP",
+    },
+    {
+      name: "Explainable AI",
+      code: "CS 59200-EAI",
+      grade: "WIP",
+    },
+    {
+      name: "Principles in Computer Architecture",
+      code: "CS 59300-PCA",
       grade: "WIP",
     },
   ];

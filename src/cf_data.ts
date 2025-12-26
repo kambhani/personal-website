@@ -157,6 +157,25 @@ export const cfData = {
       oldRating: 1274,
       newRating: 1224,
     },
+    {
+      contestId: 2033,
+      contestName: "Codeforces Round 981 (Div. 3)",
+      handle: "liquidplasma",
+      rank: 8628,
+      ratingUpdateTimeSeconds: 1729788600,
+      oldRating: 1224,
+      newRating: 1199,
+    },
+    {
+      contestId: 2122,
+      contestName:
+        "Order Capital Round 1 (Codeforces Round 1038, Div. 1 + Div. 2)",
+      handle: "liquidplasma",
+      rank: 9650,
+      ratingUpdateTimeSeconds: 1752943800,
+      oldRating: 1199,
+      newRating: 1158,
+    },
   ],
 };
 

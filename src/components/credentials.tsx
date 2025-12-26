@@ -18,10 +18,56 @@ export default function Credentials() {
 
   const certData = [
     {
+      company: "Handshake",
+      name: "Model Validation 2 - Expert",
+      image: "hai_mv2.png",
+      url: "https://www.credly.com/badges/efa905dd-9b5d-45e4-a588-655527358a17",
+      description:
+        "Accomplished by completing a full internal or client project.",
+      skills: ["AI", "CS", "Model Validation"],
+    },
+    {
+      company: "Handshake",
+      name: "Model Validation 1 - Trainer",
+      image: "hai_mv1.png",
+      url: "https://www.credly.com/badges/adb7486d-7257-46a1-8fe0-184a4158c7a7",
+      description:
+        "Foundational training that includes coursework, a quiz, and a challenging assignment in which you must intentionally break a top model, then explain how you identified and resolved the issue within your field.",
+      skills: [
+        "AI",
+        "Expert",
+        "Model Training",
+        "Prompt Engineering",
+        "Rubrics",
+      ],
+    },
+    {
+      company: "Google",
+      name: "Google Data Analytics Certificate",
+      image: "google_data.png",
+      url: "https://www.credly.com/badges/8dafa2f1-b761-404d-8cb9-140a8212886b",
+      description:
+        "Those who earn the Google Data Analytics Certificate have completed eight courses, developed by Google, that include hands-on, practice-based assessments and are designed to prepare them for introductory-level roles in Data Analytics. They are competent in tools and platforms including spreadsheets, SQL, Tableau, and R. They know how to prepare, process, analyze, and share data for thoughtful action.",
+      skills: [
+        "Data Aggregation",
+        "Data Analytics",
+        "Data Calculations",
+        "Data Cleaning",
+        "Data Ethics",
+        "Data Visualization",
+        "Presentations",
+        "Problem Solving",
+        "R",
+        "Spreadsheets",
+        "SQL",
+        "Structured Thinking",
+      ],
+    },
+    {
       company: "Microsoft",
       name: "Microsoft Certified: Azure Fundamentals",
       image: "az900.png",
-      url: "https://www.credly.com/badges/2022f783-514d-4e8e-a853-03e40b0bcf21/public_url",
+      url: "https://www.credly.com/badges/2022f783-514d-4e8e-a853-03e40b0bcf21",
       description:
         "Earners of the Azure Fundamentals certification have demonstrated foundational level knowledge of cloud services and how those services are provided with Microsoft Azure.",
       skills: [
@@ -38,7 +84,7 @@ export default function Credentials() {
       company: "Global Information Assurance Certification",
       name: "GIAC Cloud Security Essentials",
       image: "gcld.png",
-      url: "https://www.credly.com/badges/520d6624-31a3-4d09-92d4-d01f72053c6d/public_url",
+      url: "https://www.credly.com/badges/520d6624-31a3-4d09-92d4-d01f72053c6d",
       description:
         "The GIAC Cloud Security Essentials (GCLD) certification validates a practitioner's ability to implement preventive, detective, and reactionary techniques to defend valuable cloud-based workloads.",
       skills: [
@@ -60,7 +106,7 @@ export default function Credentials() {
       company: "Global Information Assurance Certification",
       name: "GIAC Foundational Cybersecurity Technologies",
       image: "gfact.png",
-      url: "https://www.credly.com/badges/410ecdc9-609e-4658-befc-91fe244b1402/public_url",
+      url: "https://www.credly.com/badges/410ecdc9-609e-4658-befc-91fe244b1402",
       description:
         "The GIAC Foundational Cybersecurity Technologies (GFACT) certification validates a practitioner's knowledge of essential foundational cybersecurity concepts. GFACT-certified professionals are familiar with practical skills in computers, technology, and security fundamentals that are needed to kickstart a career in cybersecurity.",
       skills: [
@@ -78,7 +124,7 @@ export default function Credentials() {
       company: "Global Information Assurance Certification",
       name: "GIAC Advisory Board",
       image: "giac_ab.png",
-      url: "https://www.credly.com/badges/8d9f272c-cda9-4588-8a4c-8ea396069e70/public_url",
+      url: "https://www.credly.com/badges/8d9f272c-cda9-4588-8a4c-8ea396069e70",
       description:
         "The GIAC Advisory Board is an invitation only, email-based forum where IT Security professionals can exchange ideas and advice. Invitations are extended to GIAC certified professionals who demonstrate exemplary performance on GIAC exams. Members are often consulted as subject-matter experts for content-related issues in various GIAC program needs.",
       skills: [
@@ -93,7 +139,7 @@ export default function Credentials() {
       company: "AT&T",
       name: "2021 AT&T Summer Learning Academy Extern",
       image: "att_sla.png",
-      url: "https://www.credly.com/badges/f11b3666-e348-485d-879c-f805b8b2218d/public_url",
+      url: "https://www.credly.com/badges/f11b3666-e348-485d-879c-f805b8b2218d",
       description:
         "Earners acquire knowledge and insights of four key areas: Personal Development, Business, Technology, and insights on life at AT&T direct from our leadership and experts in their field. They will complete both short informative self-paced classes and exciting live events. As an AT&T Summer Learning Academy Extern, the badge earner has acquired business and technical acumen while building skills that can be applicable to any career path.",
       skills: [

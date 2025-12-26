@@ -4,6 +4,14 @@ import { Parallax } from "react-scroll-parallax";
 export default function Experience() {
   const comapny_info = [
     {
+      name: "Old Mission Capital",
+      logo: "old_mission_capital.jpeg",
+      time: "Incoming August 2026",
+      position: "Junior Software Engineer",
+      description:
+        "Upon my graduation, I will be joining Old Mission as a junior software engineer. I look forward to growing as a developer at the firm!",
+    },
+    {
       name: "Akuna Capital",
       logo: "akuna_capital.jpeg",
       time: "June 2025 — August 2025",
